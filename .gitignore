@@ -12,5 +12,8 @@ Thumbs.db
 *.vi
 *~
 
+# Jekyll metadata
+html/.jekyll-metadata
+
 # Folders to ignore
 node_modules
