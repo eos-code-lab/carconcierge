@@ -1,2 +1,8 @@
-source: html
-destination: dist
+# Permalinks
+permalink:    pretty
+
+# Server
+source:       html
+destination:  dist
+host:         127.0.0.1
+port:         4000
