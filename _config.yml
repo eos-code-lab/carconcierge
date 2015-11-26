@@ -1,8 +1,14 @@
-# Permalinks
-permalink:    pretty
-
-# Server
+# Where things are
 source:       html
 destination:  dist
-host:         127.0.0.1
-port:         4000
+
+# Handling reading
+encoding: utf-8
+
+# Serving
+port:     4000
+host:     127.0.0.1
+baseurl:  ""
+
+# Outputting
+permalink:  pretty
