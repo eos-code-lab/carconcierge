@@ -1,0 +1,27 @@
+{
+  "name": "gh-pages-boilerplate",
+  "version": "1.0.0",
+  "description": "Starter repository for GitHub Pages workflow with Grunt.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdog/gh-pages-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "gh-pages",
+    "grunt",
+    "jekyll",
+    "less",
+    "workflow"
+  ],
+  "author": "Cătălin Dogaru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cdog/gh-pages-boilerplate/issues"
+  },
+  "homepage": "https://github.com/cdog/gh-pages-boilerplate#readme"
+}
