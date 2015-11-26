@@ -1,0 +1,11 @@
+# OS generated files
+._*
+.DS_Store
+Thumbs.db
+
+# Editor generated files
+*.sublime-project
+*.sublime-workspace
+
+# Folders to ignore
+node_modules
