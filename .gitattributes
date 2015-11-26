@@ -1,4 +1,7 @@
-# Enforce Unix newlines
+# Normalize line endings for all text files
+* text=auto
+
+# Enforce Unix line endings
 *.css   text eol=lf
 *.html  text eol=lf
 *.js    text eol=lf
@@ -8,5 +11,6 @@
 *.svg   text eol=lf
 *.yml   text eol=lf
 
-# Don't diff or textually merge source maps
+# Treat as binary data
 *.map   binary
+*.min.* binary
