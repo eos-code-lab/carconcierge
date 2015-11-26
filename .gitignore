@@ -7,5 +7,10 @@ Thumbs.db
 *.sublime-project
 *.sublime-workspace
 
+# Files to ignore
+*.log
+*.vi
+*~
+
 # Folders to ignore
 node_modules
