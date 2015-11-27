@@ -44,5 +44,6 @@
     "grunt-html": "^5.0.1",
     "grunt-jekyll": "^0.4.3",
     "grunt-jscs": "^2.3.0"
-  }
+  },
+  "private": true
 }
