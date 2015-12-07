@@ -19,3 +19,6 @@ title: GitHub Pages boilerplate
 tagline: Starter repository for GitHub Pages workflow with Grunt.
 description:
 author: Eau de Web
+
+# Google Analytics
+ga_property: UA-XXXXX-Y # Tracking ID
