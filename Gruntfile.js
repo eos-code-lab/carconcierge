@@ -151,6 +151,13 @@ module.exports = function (grunt) {
         files: 'less/**/*.less',
         tasks: 'less'
       }
+    },
+    concurrent: {
+      options: {
+        logConcurrentOutput: true
+      },
+      watch: ['_watch', 'jekyll:watch'],
+      serve: ['_watch', 'jekyll:serve']
     }
   });
 
