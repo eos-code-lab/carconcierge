@@ -119,6 +119,33 @@ module.exports = function (grunt) {
     },
     htmllint: {
       src: 'dist/**/*.html'
+    },
+    _htmlmin: {
+      dist: {
+        options: {
+          collapseWhitespace: true,
+          conservativeCollapse: true,
+          minifyCSS: true,
+          minifyJS: true,
+          removeAttributeQuotes: true,
+          removeComments: true
+        },
+        expand: true,
+        cwd: 'dist',
+        src: '**/*.html',
+        dest: 'dist'
+      }
+    }
+  });
+
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.renameTask('htmlmin', '_htmlmin');
+
+  grunt.registerTask('htmlmin', function () {
+    grunt.task.requires('env');
+
+    if (process.env.JEKYLL_ENV === 'production') {
+      grunt.task.run('_htmlmin');
     }
   });
 };
