@@ -170,6 +170,10 @@ module.exports = function (grunt) {
           branch: 'gh-pages'
         }
       }
+    },
+    clean: {
+      assets: ['html/assets/app/css', 'html/assets/app/js'],
+      dist: 'dist'
     }
   });
 
