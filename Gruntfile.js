@@ -44,6 +44,20 @@ module.exports = function (grunt) {
       core: {
         src: 'html/assets/app/css/style.css'
       }
+    },
+    cssmin: {
+      options: {
+        advanced: false,
+        keepSpecialComments: '*',
+        sourceMap: true
+      },
+      core: {
+        expand: true,
+        cwd: 'dist/assets/app/css',
+        src: ['*.css', '!*.min.css'],
+        dest: 'dist/assets/app/css',
+        ext: '.min.css'
+      }
     }
   });
 };
