@@ -1,7 +1,10 @@
 module.exports = function (grunt) {
   'use strict';
 
-  require('jit-grunt')(grunt);
+  require('jit-grunt')(grunt, {
+    htmllint: 'grunt-html'
+  });
+
   require('time-grunt')(grunt);
 
   grunt.initConfig({
@@ -53,9 +56,9 @@ module.exports = function (grunt) {
       },
       core: {
         expand: true,
-        cwd: 'dist/assets/app/css',
+        cwd: 'html/assets/app/css',
         src: ['*.css', '!*.min.css'],
-        dest: 'dist/assets/app/css',
+        dest: 'html/assets/app/css',
         ext: '.min.css'
       }
     },
@@ -79,7 +82,7 @@ module.exports = function (grunt) {
     concat: {
       core: {
         src: [
-          'js/application.js'
+          'js/main.js'
         ],
         dest: 'html/assets/app/js/application.js'
       }
@@ -98,12 +101,12 @@ module.exports = function (grunt) {
     },
     copy: {
       assets: {
+        expand: true,
+        src: 'assets/**',
+        dest: 'html'
+      },
+      packages: {
         files: [
-          {
-            expand: true,
-            src: 'assets/**',
-            dest: 'html'
-          },
           {
             expand: true,
             cwd: 'node_modules/jquery/dist',
@@ -160,13 +163,21 @@ module.exports = function (grunt) {
         },
         files: ['Gruntfile.js', 'package.json']
       },
+      assets: {
+        files: 'assets/**',
+        tasks: 'copy:assets'
+      },
+      html: {
+        files: 'dist/**/*.html',
+        tasks: ['htmllint', 'htmlmin']
+      },
       js: {
-        files: 'js/**/*.js',
-        tasks: 'concat'
+        files: 'js/*.js',
+        tasks: 'js'
       },
       less: {
         files: 'less/**/*.less',
-        tasks: 'less'
+        tasks: 'css'
       }
     },
     concurrent: {
@@ -211,7 +222,12 @@ module.exports = function (grunt) {
   grunt.registerTask('watch', ['env', 'concurrent:watch']);
   grunt.registerTask('serve', ['env', 'concurrent:serve']);
 
-  grunt.registerTask('build', ['env', 'jekyll:build']);
+  grunt.registerTask('assets', 'copy');
+  grunt.registerTask('css', ['less', 'postcss', 'csscomb', 'csslint', 'cssmin']);
+  grunt.registerTask('js', ['eslint', 'jscs', 'concat', 'uglify']);
+  grunt.registerTask('html', ['jekyll:build', 'htmllint', 'htmlmin']);
+
+  grunt.registerTask('build', ['env', 'assets', 'css', 'js', 'html']);
   grunt.registerTask('test', ['clean', 'build']);
   grunt.registerTask('deploy', 'buildcontrol');
 
