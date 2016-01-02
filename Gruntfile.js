@@ -95,6 +95,11 @@ module.exports = function (grunt) {
         src: '<%= concat.core.dest %>',
         dest: 'html/assets/app/js/application.min.js'
       }
+    },
+    env: {
+      build: {
+        JEKYLL_ENV: grunt.option('environment') || 'development'
+      }
     }
   });
 };
