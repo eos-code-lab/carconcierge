@@ -19,6 +19,14 @@ module.exports = function (grunt) {
           'html/assets/app/css/style.css': 'less/style.less'
         }
       }
+    },
+    postcss: {
+      options: {
+        map: true,
+        processors: [
+          require('autoprefixer')
+        ]
+      }
     }
   });
 };
