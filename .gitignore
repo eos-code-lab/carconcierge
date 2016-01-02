@@ -1,3 +1,7 @@
+# Build generated files
+/dist
+/html/assets
+
 # OS generated files
 ._*
 .DS_Store
