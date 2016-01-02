@@ -1,3 +1,6 @@
 {
-  "preset": "jquery"
+  "disallowSpacesInAnonymousFunctionExpression": null,
+  "disallowSpacesInFunctionExpression": null,
+  "maximumLineLength": null,
+  "preset": "google"
 }
