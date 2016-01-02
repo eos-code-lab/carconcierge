@@ -14,7 +14,7 @@ module.exports = function (grunt) {
           sourceMapFilename: 'html/assets/app/css/style.css.map',
           sourceMapURL: 'style.css.map',
           strictMath: true
-        }
+        },
         files: {
           'html/assets/app/css/style.css': 'less/style.less'
         }
@@ -94,6 +94,14 @@ module.exports = function (grunt) {
       core: {
         src: '<%= concat.core.dest %>',
         dest: 'html/assets/app/js/application.min.js'
+      }
+    },
+    copy: {
+      jquery: {
+        expand: true,
+        cwd: 'node_modules/jquery/dist',
+        src: '*',
+        dest: 'html/assets/vendor/jquery'
       }
     },
     env: {
