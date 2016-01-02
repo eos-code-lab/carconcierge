@@ -52,8 +52,8 @@
     "time-grunt": "^1.2.2"
   },
   "dependencies": {
-    "jquery": "^1.11.3",
-    "normalize.css": "^3.0.3"
+    "bootstrap": "^3.3.6",
+    "jquery": "^1.11.3"
   },
   "private": true
 }
