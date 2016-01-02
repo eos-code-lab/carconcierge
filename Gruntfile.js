@@ -97,11 +97,20 @@ module.exports = function (grunt) {
       }
     },
     copy: {
-      jquery: {
-        expand: true,
-        cwd: 'node_modules/jquery/dist',
-        src: '*',
-        dest: 'html/assets/vendor/jquery'
+      assets: {
+        files: [
+          {
+            expand: true,
+            src: 'assets/**',
+            dest: 'html'
+          },
+          {
+            expand: true,
+            cwd: 'node_modules/jquery/dist',
+            src: '*',
+            dest: 'html/assets/vendor/jquery'
+          }
+        ]
       }
     },
     env: {
@@ -180,7 +189,7 @@ module.exports = function (grunt) {
       }
     },
     clean: {
-      assets: ['html/assets/app/css', 'html/assets/app/js'],
+      assets: 'html/assets',
       dist: 'dist'
     }
   });
