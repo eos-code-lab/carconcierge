@@ -100,6 +100,22 @@ module.exports = function (grunt) {
       build: {
         JEKYLL_ENV: grunt.option('environment') || 'development'
       }
+    },
+    jekyll: {
+      options: {
+        config: '_config.yml'
+      },
+      build: {},
+      serve: {
+        options: {
+          serve: true
+        }
+      },
+      watch: {
+        options: {
+          watch: true
+        }
+      }
     }
   });
 };
