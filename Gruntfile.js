@@ -135,6 +135,22 @@ module.exports = function (grunt) {
         src: '**/*.html',
         dest: 'dist'
       }
+    },
+    _watch: {
+      configFiles: {
+        options: {
+          reload: true
+        },
+        files: ['Gruntfile.js', 'package.json']
+      },
+      js: {
+        files: 'js/**/*.js',
+        tasks: 'concat'
+      },
+      less: {
+        files: 'less/**/*.less',
+        tasks: 'less'
+      }
     }
   });
 
@@ -148,4 +164,7 @@ module.exports = function (grunt) {
       grunt.task.run('_htmlmin');
     }
   });
+
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.renameTask('watch', '_watch');
 };
