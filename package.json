@@ -51,5 +51,9 @@
     "jit-grunt": "^0.9.1",
     "time-grunt": "^1.2.2"
   },
+  "dependencies": {
+    "jquery": "^1.11.3",
+    "normalize.css": "^3.0.3"
+  },
   "private": true
 }
