@@ -27,6 +27,15 @@ module.exports = function (grunt) {
           require('autoprefixer')
         ]
       }
+    },
+    csscomb: {
+      options: {
+        config: 'less/.csscomb.json'
+      },
+      core: {
+        src: 'html/assets/app/css/style.css',
+        dest: 'html/assets/app/css/style.css'
+      }
     }
   });
 };
