@@ -52,7 +52,6 @@
     "time-grunt": "^1.2.2"
   },
   "dependencies": {
-    "bootstrap": "^3.3.6",
     "jquery": "^1.11.3"
   },
   "private": true
