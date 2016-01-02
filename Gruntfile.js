@@ -190,4 +190,13 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.renameTask('watch', '_watch');
+
+  grunt.registerTask('watch', ['env', 'concurrent:watch']);
+  grunt.registerTask('serve', ['env', 'concurrent:serve']);
+
+  grunt.registerTask('build', ['env', 'jekyll:build']);
+  grunt.registerTask('test', ['clean', 'build']);
+  grunt.registerTask('deploy', 'buildcontrol');
+
+  grunt.registerTask('default', 'build');
 };
