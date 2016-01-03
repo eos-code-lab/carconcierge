@@ -15,16 +15,29 @@
 </div>
 <div class="section">
   <div class="container">
+    <p>&nbsp;</p>
     <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center">
-        <p>&nbsp;</p>
-        <p><img src="assets/app/img/slider-arrows.png" alt=""></p>
-        <p>&nbsp;</p>
-        <p class="h3 text-muted">„Cât timp pierde un șofer inteligent pentru a rezolva toate actele mașinii? Niciunul.”</p>
-        <p>&nbsp;</p>
-        <p><span class="text-info">Andrei Popescu</span>, Volkswagen Golf</p>
-        <p>&nbsp;</p>
-        <p><img src="assets/app/img/slider-dots.png" alt=""></p>
+        <div class="testimonials">
+          {% for i in (0..1) %}
+            <div>
+              <p><img src="assets/app/img/avatar.png" alt="Andrei Popescu" class="img-circle center-block"></p>
+              <p>&nbsp;</p>
+              <p class="h3 text-muted">„Cât timp pierde un șofer inteligent pentru a rezolva toate actele mașinii? Niciunul.”</p>
+              <p>&nbsp;</p>
+              <p>Andrei Popescu</p>
+              <p>
+                <span class="text-info">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                </span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+              </p>
+            </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
