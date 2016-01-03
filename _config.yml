@@ -15,10 +15,10 @@ url:      ""
 permalink:  pretty
 
 # Site settings
-title: GitHub Pages boilerplate
-tagline: Starter repository for GitHub Pages workflow with Grunt.
+title: Car Concierge
+tagline: Timp liber de la prima cheie
 description:
-author: Eau de Web
+author: EOS Code Lab
 
 # Google Analytics
 ga_property: UA-XXXXX-Y # Tracking ID
