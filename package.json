@@ -53,7 +53,8 @@
   },
   "dependencies": {
     "jquery": "^1.11.3",
-    "jquery.scrollto": "^2.1.2"
+    "jquery.scrollto": "^2.1.2",
+    "slick-carousel": "^1.5.9"
   },
   "private": true
 }
