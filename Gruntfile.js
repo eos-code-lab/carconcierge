@@ -122,6 +122,12 @@ module.exports = function (grunt) {
             cwd: 'node_modules/jquery.scrollto',
             src: '*.js',
             dest: 'html/assets/vendor/jquery.scrollto'
+          },
+          {
+            expand: true,
+            cwd: 'node_modules/slick-carousel/slick',
+            src: '*',
+            dest: 'html/assets/vendor/slick'
           }
         ]
       }
