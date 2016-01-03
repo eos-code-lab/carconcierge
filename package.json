@@ -52,7 +52,8 @@
     "time-grunt": "^1.2.2"
   },
   "dependencies": {
-    "jquery": "^1.11.3"
+    "jquery": "^1.11.3",
+    "jquery.scrollto": "^2.1.2"
   },
   "private": true
 }

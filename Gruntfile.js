@@ -112,6 +112,12 @@ module.exports = function (grunt) {
             cwd: 'node_modules/jquery/dist',
             src: '*',
             dest: 'html/assets/vendor/jquery'
+          },
+          {
+            expand: true,
+            cwd: 'node_modules/jquery.scrollto',
+            src: '*.js',
+            dest: 'html/assets/vendor/jquery.scrollto'
           }
         ]
       }
