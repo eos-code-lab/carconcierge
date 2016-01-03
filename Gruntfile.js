@@ -200,7 +200,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:cdog/gh-pages-boilerplate.git',
+          remote: 'git@github.com:eos-code-lab/carconcierge.git',
           branch: 'gh-pages'
         }
       }
