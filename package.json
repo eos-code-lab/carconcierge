@@ -1,29 +1,29 @@
 {
-  "name": "gh-pages-boilerplate",
+  "name": "carconcierge",
   "version": "1.0.0",
-  "description": "Starter repository for GitHub Pages workflow with Grunt.",
+  "description": "Timp liber de la prima cheie",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cdog/gh-pages-boilerplate.git"
+    "url": "git+https://github.com/eos-code-lab/carconcierge.git"
   },
   "keywords": [
-    "boilerplate",
+    "carconcierge",
     "gh-pages",
     "grunt",
     "jekyll",
     "less",
     "workflow"
   ],
-  "author": "Eau de Web",
+  "author": "EOS Code Lab",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cdog/gh-pages-boilerplate/issues"
+    "url": "https://github.com/eos-code-lab/carconcierge/issues"
   },
-  "homepage": "https://github.com/cdog/gh-pages-boilerplate#readme",
+  "homepage": "https://github.com/eos-code-lab/carconcierge#readme",
   "devDependencies": {
     "autoprefixer": "^6.1.1",
     "babel-eslint": "^4.1.6",
