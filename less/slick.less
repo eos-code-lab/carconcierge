@@ -1,0 +1,40 @@
+.slick-prev,
+.slick-next {
+  background: transparent;
+  border: 0;
+  color: #ccc;
+  cursor: pointer;
+  display: block;
+  font-size: 28px;
+  line-height: 1;
+  outline: 0;
+  padding: 0;
+  position: absolute;
+  top: 34px;
+  z-index: 10;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+    color: #828c96;
+    outline: 0;
+  }
+}
+
+.slick-prev {
+  left: 20%;
+
+  &[dir="rtl"] {
+    left: auto;
+    right: 20%;
+  }
+}
+
+.slick-next {
+  right: 20%;
+
+  &[dir="rtl"] {
+    left: 20%;
+    right: auto;
+  }
+}
