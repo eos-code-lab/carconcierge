@@ -2,6 +2,7 @@ module.exports = function (grunt) {
   'use strict';
 
   require('jit-grunt')(grunt, {
+    buildcontrol: 'grunt-build-control',
     htmllint: 'grunt-html'
   });
 
@@ -29,6 +30,9 @@ module.exports = function (grunt) {
         processors: [
           require('autoprefixer')
         ]
+      },
+      core: {
+        src: 'html/assets/app/css/*.css'
       }
     },
     csscomb: {
