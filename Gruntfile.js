@@ -30,6 +30,9 @@ module.exports = function (grunt) {
         processors: [
           require('autoprefixer')
         ]
+      },
+      core: {
+        src: 'html/assets/app/css/*.css'
       }
     },
     csscomb: {
