@@ -19,26 +19,28 @@
     <p>&nbsp;</p>
     <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center">
-        <div class="testimonials">
-          {% for i in (0..1) %}
-            <div>
-              <p><img src="assets/app/img/avatar.png" alt="Andrei Popescu" class="img-circle center-block"></p>
-              <p>&nbsp;</p>
-              <p class="h3 text-muted">„Cât timp pierde un șofer inteligent pentru a rezolva toate actele mașinii? Niciunul.”</p>
-              <p>&nbsp;</p>
-              <p>Andrei Popescu</p>
-              <p>
-                <span class="text-info">
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </p>
+        {% raw %}
+          <script id="reviews-template" type="text/x-handlebars-template">
+            <div class="reviews">
+              {{#each reviews}}
+                <div>
+                  <p><img src="{{this.avatar}}" alt="{{this.author}}" class="img-circle center-block"></p>
+                  <p>&nbsp;</p>
+                  <p class="h3 text-muted">„{{this.review}}”</p>
+                  <p>&nbsp;</p>
+                  <p>{{this.author}}</p>
+                  <p>
+                    {{#with this as |review|}}
+                      {{#times 5}}
+                        <span class="glyphicon glyphicon-star {{#if (lt this review.rating)}} text-info {{/if}}"></span>
+                      {{/times}}
+                    {{/with}}
+                  </p>
+                </div>
+              {{/each}}
             </div>
-          {% endfor %}
-        </div>
+          </script>
+        {% endraw %}
       </div>
     </div>
   </div>
