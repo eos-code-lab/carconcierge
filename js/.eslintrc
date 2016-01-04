@@ -4,6 +4,9 @@
     "jquery": true
   },
   "extends": "eslint:recommended",
+  "globals": {
+    "Handlebars": false
+  },
   "parser": "babel-eslint",
   "root": true
 }
