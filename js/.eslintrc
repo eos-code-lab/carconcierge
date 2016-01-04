@@ -1,9 +1,9 @@
 {
-  "extends": "eslint:recommended",
-  "parser": "babel-eslint",
-  "root": true,
   "env": {
     "browser": true,
     "jquery": true
-  }
+  },
+  "extends": "eslint:recommended",
+  "parser": "babel-eslint",
+  "root": true
 }
