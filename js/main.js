@@ -44,16 +44,24 @@
 
   $('#reviews-template').after(html);
 
-  $('.reviews').slick({
+  $('#reviews').slick({
     autoplay: true,
     nextArrow: '<button type="button" class="slick-next"><span class="glyphicon glyphicon-chevron-right"></span></button>',
     prevArrow: '<button type="button" class="slick-prev"><span class="glyphicon glyphicon-chevron-left"></span></button>'
   });
 
-  $('.services').slick({
+  $('#services').slick({
     appendArrows: $('.services-controls'),
     fade: true,
     nextArrow: '<button type="button" class="slick-next"><span class="glyphicon glyphicon-chevron-right"></span></button>',
     prevArrow: '<button type="button" class="slick-prev"><span class="glyphicon glyphicon-chevron-left"></span></button>'
+  });
+
+  $('[data-toggle="slick"]').click(function () {
+    var $this = $(this);
+    var target = $this.data('target');
+    var slide = $this.data('slide');
+
+    $(target).slick('slickGoTo', slide);
   });
 })(jQuery);
