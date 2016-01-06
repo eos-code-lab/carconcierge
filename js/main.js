@@ -8,7 +8,7 @@
     offset: navbarHeight + 10
   });
 
-  $('a[href^="#"]').click(function (event) {
+  $('[data-toggle="scroll"]').click(function (event) {
     event.preventDefault();
 
     $('#navbar').collapse('hide');
@@ -46,6 +46,13 @@
 
   $('.reviews').slick({
     autoplay: true,
+    nextArrow: '<button type="button" class="slick-next"><span class="glyphicon glyphicon-chevron-right"></span></button>',
+    prevArrow: '<button type="button" class="slick-prev"><span class="glyphicon glyphicon-chevron-left"></span></button>'
+  });
+
+  $('.services').slick({
+    appendArrows: $('.services-controls'),
+    fade: true,
     nextArrow: '<button type="button" class="slick-next"><span class="glyphicon glyphicon-chevron-right"></span></button>',
     prevArrow: '<button type="button" class="slick-prev"><span class="glyphicon glyphicon-chevron-left"></span></button>'
   });
