@@ -38,3 +38,26 @@
     right: auto;
   }
 }
+
+#services-nav {
+  .slick-prev,
+  .slick-next {
+    top: 24px;
+  }
+
+  .slick-prev {
+    left: -10%;
+
+    &[dir="rtl"] {
+      right: -10%;
+    }
+  }
+
+  .slick-next {
+    right: -10%;
+
+    &[dir="rtl"] {
+      left: -10%;
+    }
+  }
+}
