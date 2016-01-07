@@ -44,18 +44,19 @@
     prevArrow: '<button type="button" class="slick-prev"><span class="glyphicon glyphicon-chevron-left"></span></button>'
   });
 
-  $('#services').slick({
-    appendArrows: $('.services-controls'),
-    fade: true,
+  $('#services-nav').slick({
+    asNavFor: '#services',
+    centerMode: true,
+    centerPadding: 0,
+    focusOnSelect: true,
     nextArrow: '<button type="button" class="slick-next"><span class="glyphicon glyphicon-chevron-right"></span></button>',
-    prevArrow: '<button type="button" class="slick-prev"><span class="glyphicon glyphicon-chevron-left"></span></button>'
+    prevArrow: '<button type="button" class="slick-prev"><span class="glyphicon glyphicon-chevron-left"></span></button>',
+    slidesToShow: 3
   });
 
-  $('[data-toggle="slick"]').click(function () {
-    var $this = $(this);
-    var target = $this.data('target');
-    var slide = $this.data('slide');
-
-    $(target).slick('slickGoTo', slide);
+  $('#services').slick({
+    arrows: false,
+    asNavFor: '#services-nav',
+    fade: true
   });
 })(jQuery);
