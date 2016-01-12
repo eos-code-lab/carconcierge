@@ -27,6 +27,12 @@
   var context = {
     reviews: [
       {
+        reviewer: 'Ami Barbu',
+        avatar: 'https://scontent.xx.fbcdn.net/hprofile-xpf1/v/t1.0-1/p100x100/11070013_10204804645490594_1105531698772016969_n.jpg?oh=affce68257de24687e7f537e64d8a6ee&oe=570C555E',
+        text: 'In 2015 am avut nevoie sa vand o masina. Programul meu incarcat cu serviciu si doi copii mici nu imi permite nici macar sa raspund la toate apelurile celor interesati de cumpararea masinii scoase de mine la vanzare, despre timp pentru intalniri, vizionari si teste cu potentialii cumparatori ce sa mai spun? Mi-a fost recomandat calduros sa lucrez cu Car Concierge si la finalul colaborarii nu pot sa spun decat ca am reusit sa vand masina la un pret mai bun decat speram si habar nu am avut cum s-a intamplat asta! Gabriel a fost ca un inger pazitor care s-a ocupat de absolut tot, comunicand cu mine fiecare etapa si asigurandu-se constant ca actioneaza conform cu ceea ce imi doresc eu. Il recomand mai mult decat calduros si pe aceasta cale il asigur ca voi reapela cu incredere si relaxare la serviciile lui cu prima ocazie cand voi mai avea nevoie. Eu am fost un sofer inteligent si nu am pierdut timp deloc! ;) Tu de ce nu ai fi la fel?',
+        rating: 5
+      },
+      {
         reviewer: 'Mihai Petcu',
         avatar: 'https://scontent.xx.fbcdn.net/hprofile-xpt1/v/t1.0-1/p100x100/10245519_1317171761632513_4434215803633833387_n.jpg?oh=29aa1cf1dcf0dbff1fff87870a9aae56&oe=573BAE64',
         text: 'Inainte de toate Gabi este un prieten, am ajuns sa fim prieteni de-a lungul anilor, iar faptul ca noi inca colaboram cu toate ca amandoi ne-am schimbat domeniile de activitate in ultimii ani spune multe. Nu voi enumera aici serviciile de care am beneficiat din partea Car Concierge, pentru compania noastra, pentru ca nici eu nu le mai stiu pe toate insa retin aspectul cel mai important si acela ca in momentul in care am apelat la ei pentru oricare din serviciile oferite mi-am si luat gandul de la problema respectiva. Comfortul de care beneficiezi colaborand cu Car Concierge merita cu siguranta pretul cerut pentru serviciile oferite. Ar fi multe de spus insa ma rezum la a mentiona faptul ca voi colabora cu Gabi indiferent de numele companiei si il voi recomanda deasemenea.',
