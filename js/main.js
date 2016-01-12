@@ -27,7 +27,7 @@
   var context = {
     reviews: [
       {
-        reviewer : 'Mihai Petcu',
+        reviewer: 'Mihai Petcu',
         avatar: 'https://scontent.xx.fbcdn.net/hprofile-xpt1/v/t1.0-1/p100x100/10245519_1317171761632513_4434215803633833387_n.jpg?oh=29aa1cf1dcf0dbff1fff87870a9aae56&oe=573BAE64',
         text: 'Inainte de toate Gabi este un prieten, am ajuns sa fim prieteni de-a lungul anilor, iar faptul ca noi inca colaboram cu toate ca amandoi ne-am schimbat domeniile de activitate in ultimii ani spune multe. Nu voi enumera aici serviciile de care am beneficiat din partea Car Concierge, pentru compania noastra, pentru ca nici eu nu le mai stiu pe toate insa retin aspectul cel mai important si acela ca in momentul in care am apelat la ei pentru oricare din serviciile oferite mi-am si luat gandul de la problema respectiva. Comfortul de care beneficiezi colaborand cu Car Concierge merita cu siguranta pretul cerut pentru serviciile oferite. Ar fi multe de spus insa ma rezum la a mentiona faptul ca voi colabora cu Gabi indiferent de numele companiei si il voi recomanda deasemenea.',
         rating: 5
