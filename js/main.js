@@ -8,7 +8,7 @@
     offset: navbarHeight + 10
   });
 
-  $('[data-toggle="scroll"]').click(function (event) {
+  $('[data-trigger="scroll"]').click(function (event) {
     event.preventDefault();
 
     $('#navbar').collapse('hide');
