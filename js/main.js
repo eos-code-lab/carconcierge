@@ -8,6 +8,8 @@
     offset: navbarHeight + 10
   });
 
+  $('.navbar-fixed-top').autoHidingNavbar();
+
   $('[data-trigger="scroll"]').click(function (event) {
     event.preventDefault();
 
