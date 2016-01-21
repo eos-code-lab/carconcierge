@@ -17,7 +17,6 @@
 
     $(window).stop(true).scrollTo(target, {
       duration: 1000,
-      interrupt: true,
       offset: -navbarHeight
     });
   });
