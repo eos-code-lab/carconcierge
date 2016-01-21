@@ -165,7 +165,7 @@
     "@navbar-inverse-color": "lighten(@gray-light, 15%)",
     "@navbar-inverse-bg": "#0064a0",
     "@navbar-inverse-border": "#00558c",
-    "@navbar-inverse-link-color": "#64b4fa",
+    "@navbar-inverse-link-color": "#d2dcf0",
     "@navbar-inverse-link-hover-color": "#fff",
     "@navbar-inverse-link-hover-bg": "transparent",
     "@navbar-inverse-link-active-color": "@navbar-inverse-link-hover-color",
@@ -175,9 +175,9 @@
     "@navbar-inverse-brand-color": "@navbar-inverse-link-color",
     "@navbar-inverse-brand-hover-color": "#fff",
     "@navbar-inverse-brand-hover-bg": "transparent",
-    "@navbar-inverse-toggle-hover-bg": "#333",
+    "@navbar-inverse-toggle-hover-bg": "#00558c",
     "@navbar-inverse-toggle-icon-bar-bg": "#fff",
-    "@navbar-inverse-toggle-border-color": "#333",
+    "@navbar-inverse-toggle-border-color": "#00558c",
     "@nav-link-padding": "10px 15px",
     "@nav-link-hover-bg": "@gray-lighter",
     "@nav-disabled-link-color": "@gray-light",
@@ -431,5 +431,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=989d08de69ea9278941d"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=553372cb3219d0518340"
 }

@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=989d08de69ea9278941d)
- * Config saved to config.json and https://gist.github.com/989d08de69ea9278941d
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=553372cb3219d0518340)
+ * Config saved to config.json and https://gist.github.com/553372cb3219d0518340
  */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
@@ -4602,7 +4602,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   border-color: #00558c;
 }
 .navbar-inverse .navbar-brand {
-  color: #64b4fa;
+  color: #d2dcf0;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
@@ -4613,7 +4613,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #9d9d9d;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #64b4fa;
+  color: #d2dcf0;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
@@ -4633,11 +4633,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: transparent;
 }
 .navbar-inverse .navbar-toggle {
-  border-color: #333333;
+  border-color: #00558c;
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #333333;
+  background-color: #00558c;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #ffffff;
@@ -4660,7 +4660,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     background-color: #00558c;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: #64b4fa;
+    color: #d2dcf0;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -4681,13 +4681,13 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   }
 }
 .navbar-inverse .navbar-link {
-  color: #64b4fa;
+  color: #d2dcf0;
 }
 .navbar-inverse .navbar-link:hover {
   color: #ffffff;
 }
 .navbar-inverse .btn-link {
-  color: #64b4fa;
+  color: #d2dcf0;
 }
 .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link:focus {
