@@ -52,6 +52,7 @@
     "time-grunt": "^1.2.2"
   },
   "dependencies": {
+    "dotdotdot": "^1.7.0",
     "handlebars": "^4.0.5",
     "jquery": "^1.11.3",
     "jquery.scrollto": "^2.1.2",

@@ -135,6 +135,12 @@ module.exports = function (grunt) {
             cwd: 'node_modules/slick-carousel/slick',
             src: '*',
             dest: 'html/assets/vendor/slick'
+          },
+          {
+            expand: true,
+            cwd: 'node_modules/dotdotdot/src/js',
+            src: '*',
+            dest: 'html/assets/vendor/jquery.dotdotdot'
           }
         ]
       }
