@@ -68,6 +68,12 @@
     prevArrow: '<button type="button" class="slick-prev"><span class="glyphicon glyphicon-chevron-left"></span></button>'
   });
 
+  $('.review').dotdotdot({
+    after: '<a href="https://www.facebook.com/carconcierge.ro/reviews/" target="_blank">Vezi mai mult &rsaquo;</a>',
+    ellipsis: '… ',
+    watch: true
+  });
+
   $('#services-nav').slick({
     asNavFor: '#services',
     centerMode: true,
