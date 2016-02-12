@@ -85,6 +85,7 @@
   });
 
   $('#services').slick({
+    adaptiveHeight: true,
     arrows: false,
     asNavFor: '#services-nav',
     fade: true
