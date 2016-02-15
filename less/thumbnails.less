@@ -3,23 +3,25 @@
   border-color: #ccc;
   border-radius: 10px;
   border-width: 2px;
-}
 
-@media (min-width: 768px) {
-  .thumbnail {
+  &:hover {
+    border-color: #0080c8;
+  }
+
+  .divider {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  h4 {
+    margin-top: 30px;
+  }
+
+  @media (min-width: 480px) {
+    min-height: 420px;
+  }
+
+  @media (min-width: 768px) {
     min-height: 400px;
   }
-}
-
-.thumbnail:hover {
-  border-color: #0080c8;
-}
-
-.thumbnail .divider {
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-.thumbnail h4 {
-  margin-top: 30px;
 }
