@@ -5,6 +5,7 @@
   },
   "extends": "eslint:recommended",
   "globals": {
+    "ga": false,
     "Handlebars": false
   },
   "parser": "babel-eslint",

@@ -8,6 +8,14 @@
     offset: navbarHeight + 10
   });
 
+  $('#navbar').on('activate.bs.scrollspy', function (event) {
+    var label = $(event.target).text();
+
+    if (typeof ga === 'function') {
+      ga('send', 'event', 'ScrollSpy', 'activate', label);
+    }
+  });
+
   $('.navbar-fixed-top').autoHidingNavbar();
 
   $('[data-trigger="scroll"]').click(function (event) {
@@ -89,5 +97,14 @@
     arrows: false,
     asNavFor: '#services-nav',
     fade: true
+  });
+
+  $('#services').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    var $slide = $('.slick-slide', this).eq(nextSlide);
+    var label = $('.shortname', $slide).text();
+
+    if (typeof ga === 'function') {
+      ga('send', 'event', 'Services', 'change', label);
+    }
   });
 })(jQuery);
