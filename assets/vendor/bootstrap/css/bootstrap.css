@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=553372cb3219d0518340)
- * Config saved to config.json and https://gist.github.com/553372cb3219d0518340
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=a660f4ed6e884510030f)
+ * Config saved to config.json and https://gist.github.com/a660f4ed6e884510030f
  */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
@@ -4174,7 +4174,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 80px;
+  min-height: 70px;
   margin-bottom: 22px;
   border: 1px solid transparent;
 }
@@ -4282,10 +4282,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 29px 15px;
+  padding: 24px 15px;
   font-size: 20px;
   line-height: 22px;
-  height: 80px;
+  height: 70px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4305,8 +4305,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: right;
   margin-right: 15px;
   padding: 9px 10px;
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin-top: 18px;
+  margin-bottom: 18px;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
@@ -4330,7 +4330,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 14.5px -15px;
+  margin: 12px -15px;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -4369,8 +4369,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 29px;
-    padding-bottom: 29px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 .navbar-form {
@@ -4381,8 +4381,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 22px;
-  margin-bottom: 22px;
+  margin-top: 17px;
+  margin-bottom: 17px;
 }
 @media (min-width: 768px) {
   .navbar-form .form-group {
@@ -4467,20 +4467,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-left-radius: 0;
 }
 .navbar-btn {
-  margin-top: 22px;
-  margin-bottom: 22px;
+  margin-top: 17px;
+  margin-bottom: 17px;
 }
 .navbar-btn.btn-sm {
-  margin-top: 23.5px;
-  margin-bottom: 23.5px;
+  margin-top: 18.5px;
+  margin-bottom: 18.5px;
 }
 .navbar-btn.btn-xs {
-  margin-top: 29px;
-  margin-bottom: 29px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .navbar-text {
-  margin-top: 29px;
-  margin-bottom: 29px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 @media (min-width: 768px) {
   .navbar-text {
