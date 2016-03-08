@@ -16,8 +16,6 @@
     }
   });
 
-  $('.navbar-fixed-top').autoHidingNavbar();
-
   $('[data-trigger="scroll"]').click(function (event) {
     event.preventDefault();
 
