@@ -14,34 +14,3 @@
     </div>
   </div>
 </div>
-<div class="section">
-  <div class="container">
-    <p>&nbsp;</p>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 text-center">
-        {% raw %}
-          <script id="reviews-template" type="text/x-handlebars-template">
-            <div id="reviews">
-              {{#each reviews}}
-                <div>
-                  <p><img src="{{this.avatar}}" alt="{{this.reviewer}}" class="img-circle center-block"></p>
-                  <p>&nbsp;</p>
-                  <p class="h3 lead review">„{{this.text}}”</p>
-                  <p>&nbsp;</p>
-                  <p>{{this.reviewer}}</p>
-                  <p>
-                    {{#with this as |review|}}
-                      {{#times 5}}
-                        <span class="glyphicon glyphicon-star {{#if (lt this review.rating)}} text-info {{/if}}"></span>
-                      {{/times}}
-                    {{/with}}
-                  </p>
-                </div>
-              {{/each}}
-            </div>
-          </script>
-        {% endraw %}
-      </div>
-    </div>
-  </div>
-</div>
