@@ -91,9 +91,9 @@
   });
 
   $('#services').slick({
-    adaptiveHeight: true,
     arrows: false,
     asNavFor: '#services-nav',
+    autoplay: true,
     fade: true
   });
 
