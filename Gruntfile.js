@@ -86,7 +86,6 @@ module.exports = function (grunt) {
     concat: {
       core: {
         src: [
-          'js/handlebars.helpers.js',
           'js/main.js'
         ],
         dest: 'html/assets/app/js/application.js'
@@ -112,12 +111,6 @@ module.exports = function (grunt) {
       },
       packages: {
         files: [
-          {
-            expand: true,
-            cwd: 'node_modules/handlebars/dist',
-            src: '*',
-            dest: 'html/assets/vendor/handlebars'
-          },
           {
             expand: true,
             cwd: 'node_modules/jquery/dist',
