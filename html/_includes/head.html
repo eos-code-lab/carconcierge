@@ -4,7 +4,7 @@
 <meta name="description" content="{{ site.description }}">
 <meta name="author" content="{{ site.author }}">
 <meta name="google-site-verification" content="0I2xeJ2BNWaF6ZwzqYNPH1oQtkoXhtNZ7p27se7buQs">
-<link rel="icon" href="favicon.ico">
+<link rel="icon" href="{{ site.baseurl }}/favicon.ico">
 
 <title>
   {% if page.slug == "front" %}
@@ -15,8 +15,8 @@
 </title>
 
 <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500,600&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="assets/app/css/style.min.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/app/css/style.min.css" rel="stylesheet">
 
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
