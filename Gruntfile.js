@@ -212,6 +212,12 @@ module.exports = function (grunt) {
         commit: true,
         push: true
       },
+      carconcierge: {
+        options: {
+          remote: 'ssh://carconci@sha17.tlh.ro:22222/home/carconci/public_html',
+          branch: 'master'
+        }
+      },
       pages: {
         options: {
           remote: 'git@github.com:eos-code-lab/carconcierge.git',
