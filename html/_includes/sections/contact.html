@@ -1,19 +1,46 @@
 <div class="section section-default" id="contact">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <h1 class="h2">Contact</h1>
-        <p class="lead">Ne ocupăm de toate nevoile mașinii tale. Ce problemă vă putem rezolva?</p>
-        <p><a onclick="ga('send', 'event', 'Contact', 'click', 'Trimiteți-ne un mesaj')" href="https://eoscodelab.typeform.com/to/bUu8nI" class="btn btn-outline typeform-share" data-mode="1" target="_blank">Trimiteți-ne un mesaj</a></p>
+      <div class="col-md-6 col-md-offset-3">
+        <h1 class="h2 text-center">Contact</h1>
+        {% if page.slug == 'front' %}
+          <form>
+            <div class="form-group required">
+              <label for="inputName">Nume și prenume</label>
+              <input type="text" class="form-control" id="inputName" name="name" placeholder="Nume">
+            </div>
+            <div class="form-group required">
+              <label for="inputEmail">Adresa de email</label>
+              <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="inputTel">Numărul de telefon</label>
+              <input type="tel" class="form-control" id="inputTel" name="tel" placeholder="Telefon">
+            </div>
+            <div class="form-group required">
+              <label for="inputMessage">Conținutul mesajului</label>
+              <textarea class="form-control" id="inputMessage" name="message" rows="3" placeholder="Mesaj"></textarea>
+            </div>
+            <div class="form-group">
+              <!-- TODO: Replace with actual reCAPTCHA -->
+              <img src="https://www.google.com/recaptcha/intro/images/hero-recaptcha-demo.gif" alt="" style="height: 110px; margin: -5px;">
+            </div>
+            <p><button type="submit" class="btn btn-outline">Trimiteți-ne un mesaj</button></p>
+            <p class="help-block">* Câmpurile marcate sunt obligatorii.</p>
+          </form>
+        {% else %}
+          <p class="lead text-center">Ne ocupăm de toate nevoile mașinii tale. Ce problemă vă putem rezolva?</p>
+          <p class="text-center"><a onclick="ga('send', 'event', 'Contact', 'click', 'Trimiteți-ne un mesaj')" href="{{ site.baseurl }}/#contact" class="btn btn-outline">Trimiteți-ne un mesaj</a></p>
+        {% endif %}
         <hr class="divider divider-default">
-        <h1 class="h4">Informații de contact</h1>
-        <p>
+        <h1 class="h4 text-center">Informații de contact</h1>
+        <p class="text-center">
           <a onclick="ga('send', 'event', 'Contact', 'click', 'gabriel.durbaca@carconcierge.ro')" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%67%61%62%72%69%65%6c.%64%75%72%62%61%63%61@%63%61%72%63%6f%6e%63%69%65%72%67%65.%72%6f">gabriel.durbaca@carconcierge.ro</a>
           <br>
           +40-740-303-651
         </p>
         <p>&nbsp;</p>
-        <p><a onclick="ga('send', 'event', 'Contact', 'click', 'Facebook')" href="https://www.facebook.com/carconcierge.ro" target="_blank"><img src="{{ site.baseurl }}/assets/app/img/icon-fb.png" alt="Facebook Page - carconcierge.ro"></a></p>
+        <p class="text-center"><a onclick="ga('send', 'event', 'Contact', 'click', 'Facebook')" href="https://www.facebook.com/carconcierge.ro" target="_blank"><img src="{{ site.baseurl }}/assets/app/img/icon-fb.png" alt="Facebook Page - carconcierge.ro"></a></p>
       </div>
     </div>
   </div>
