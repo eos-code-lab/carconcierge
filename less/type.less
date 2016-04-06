@@ -34,3 +34,16 @@ mark {
 .text-info {
   color: #0080c8;
 }
+
+.required {
+  label {
+    &:after {
+      color: #f00;
+      content: "*";
+      font-size: 24px;
+      margin-left: 2px;
+      margin-top: -4px;
+      position: absolute;
+    }
+  }
+}
