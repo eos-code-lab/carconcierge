@@ -4,14 +4,14 @@
       <div class="col-md-6 col-md-offset-3">
         <h1 class="h2 text-center">Contact</h1>
         {% if page.slug == 'front' %}
-          <form>
+          <form id="contact-form" action="contact.php" method="POST">
             <div class="form-group required">
               <label for="inputName">Nume și prenume</label>
-              <input type="text" class="form-control" id="inputName" name="name" placeholder="Nume">
+              <input type="text" class="form-control" id="inputName" name="name" placeholder="Nume" required>
             </div>
             <div class="form-group required">
               <label for="inputEmail">Adresa de email</label>
-              <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email">
+              <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email" required>
             </div>
             <div class="form-group">
               <label for="inputTel">Numărul de telefon</label>
@@ -19,12 +19,12 @@
             </div>
             <div class="form-group required">
               <label for="inputMessage">Conținutul mesajului</label>
-              <textarea class="form-control" id="inputMessage" name="message" rows="3" placeholder="Mesaj"></textarea>
+              <textarea class="form-control" id="inputMessage" name="message" rows="3" placeholder="Mesaj" required></textarea>
               <p class="help-block">* Câmpurile marcate sunt obligatorii.</p>
             </div>
             <div class="form-group text-center">
               <!-- TODO: Replace with actual reCAPTCHA -->
-              <img src="https://www.google.com/recaptcha/intro/images/hero-recaptcha-demo.gif" alt="" style="height: 84px; margin: -5px;">
+              <div class="g-recaptcha" data-sitekey="6LcyDx0TAAAAAIvb0dZ4DoqDHx2P0m1AYOH5gm_f" style="padding-left: 23%"></div>
             </div>
             <p class="text-center"><button type="submit" class="btn btn-outline">Trimiteți-ne un mesaj</button></p>
           </form>

@@ -119,6 +119,12 @@ module.exports = function (grunt) {
           },
           {
             expand: true,
+            cwd: 'node_modules/jquery-validation/dist',
+            src: ['*.js', 'localization/messages_ro.js'],
+            dest: 'html/assets/vendor/jquery-validation'
+          },
+          {
+            expand: true,
             cwd: 'node_modules/jquery.scrollto',
             src: '*.js',
             dest: 'html/assets/vendor/jquery.scrollto'

@@ -54,6 +54,7 @@
   "dependencies": {
     "dotdotdot": "^1.7.0",
     "jquery": "^1.12.2",
+    "jquery-validation": "^1.15.0",
     "jquery.scrollto": "^2.1.2",
     "slick-carousel": "^1.5.9"
   },
