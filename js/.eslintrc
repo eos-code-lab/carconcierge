@@ -6,6 +6,7 @@
   "extends": "eslint:recommended",
   "globals": {
     "ga": false,
+    "grecaptcha": false,
     "Handlebars": false
   },
   "parser": "babel-eslint",

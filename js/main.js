@@ -1,7 +1,3 @@
-var check_capcha = function(response) {
-  alert(response);
-};
-
 (function ($) {
   'use strict';
 
@@ -95,11 +91,11 @@ var check_capcha = function(response) {
 
   $('#contact-form').validate({
     submitHandler: function (form) {
-      // var response = grecaptcha.getResponse();
+      var response = grecaptcha.getResponse();
 
-      // console.dir(response);
-      // return false;
-      form.submit();
+      if (response !== '') {
+        form.submit();
+      }
     }
   });
 })(jQuery);
