@@ -93,7 +93,13 @@
     submitHandler: function (form) {
       var response = grecaptcha.getResponse();
 
-      if (response !== '') {
+      if (response.length == 0) {
+        $('#recaptcha-error').closest('.form-group').addClass('has-error');
+        $('#recaptcha-error').removeClass('hide');
+        return false;
+      } else {
+        $('#recaptcha-error').closest('.form-group').removeClass('has-error');
+        $('#recaptcha-error').addClass('hide');
         form.submit();
       }
     }
