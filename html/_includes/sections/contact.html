@@ -28,17 +28,17 @@
           </form>
         {% else %}
           <p class="lead text-center">Ne ocupăm de toate nevoile mașinii tale. Ce problemă vă putem rezolva?</p>
-          <p class="text-center"><a onclick="ga('send', 'event', 'Contact', 'click', 'Trimiteți-ne un mesaj')" href="{{ site.baseurl }}/#contact" class="btn btn-outline">Trimiteți-ne un mesaj</a></p>
+          <p class="text-center"><a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Contact', 'click', 'Trimiteți-ne un mesaj')" {% endif %} href="{{ site.baseurl }}/#contact" class="btn btn-outline">Trimiteți-ne un mesaj</a></p>
         {% endif %}
         <hr class="divider divider-default">
         <h1 class="h4 text-center">Informații de contact</h1>
         <p class="text-center">
-          <a onclick="ga('send', 'event', 'Contact', 'click', 'gabriel.durbaca@carconcierge.ro')" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%67%61%62%72%69%65%6c.%64%75%72%62%61%63%61@%63%61%72%63%6f%6e%63%69%65%72%67%65.%72%6f">gabriel.durbaca@carconcierge.ro</a>
+          <a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Contact', 'click', 'gabriel.durbaca@carconcierge.ro')" {% endif %} href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%67%61%62%72%69%65%6c.%64%75%72%62%61%63%61@%63%61%72%63%6f%6e%63%69%65%72%67%65.%72%6f">gabriel.durbaca@carconcierge.ro</a>
           <br>
           +40-740-303-651
         </p>
         <p>&nbsp;</p>
-        <p class="text-center"><a onclick="ga('send', 'event', 'Contact', 'click', 'Facebook')" href="https://www.facebook.com/carconcierge.ro" target="_blank"><img src="{{ site.baseurl }}/assets/app/img/icon-fb.png" alt="Facebook Page - carconcierge.ro"></a></p>
+        <p class="text-center"><a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Contact', 'click', 'Facebook')" {% endif %} href="https://www.facebook.com/carconcierge.ro" target="_blank"><img src="{{ site.baseurl }}/assets/app/img/icon-fb.png" alt="Facebook Page - carconcierge.ro"></a></p>
       </div>
     </div>
   </div>
