@@ -120,7 +120,7 @@ module.exports = function (grunt) {
           {
             expand: true,
             cwd: 'node_modules/jquery-validation/dist',
-            src: ['*.js', 'localization/messages_ro.js'],
+            src: '**',
             dest: 'html/assets/vendor/jquery-validation'
           },
           {

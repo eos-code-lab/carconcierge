@@ -70,4 +70,10 @@
       ga('send', 'event', 'Services', 'change', label);
     }
   });
+
+  $('#contact-form').validate({
+    submitHandler: function (form) {
+      form.submit();
+    }
+  });
 })(jQuery);
