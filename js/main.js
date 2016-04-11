@@ -1,3 +1,7 @@
+var check_capcha = function(response) {
+  alert(response);
+};
+
 (function ($) {
   'use strict';
 
@@ -91,6 +95,10 @@
 
   $('#contact-form').validate({
     submitHandler: function (form) {
+      // var response = grecaptcha.getResponse();
+
+      // console.dir(response);
+      // return false;
       form.submit();
     }
   });
