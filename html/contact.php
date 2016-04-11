@@ -1,6 +1,6 @@
 <?php
 // require 'functions.php'
-$email_to = 'gabriel.durbaca@carconcierge.ro, ifrim.claudia@gmail.com, test@mailinator.com';
+$email_to = 'gabriel.durbaca@carconcierge.ro, ifrim.claudia@gmail.com';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
