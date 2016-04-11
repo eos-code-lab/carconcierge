@@ -90,16 +90,17 @@
   });
 
   $('#contact-form').validate({
+    ignore: [],
+    messages: {
+      recaptcha: {
+        required: 'Validarea reCAPTCHA a eșuat.'
+      }
+    },
     rules: {
       recaptcha: {
         required: function() {
           return grecaptcha.getResponse() === '';
         }
-      }
-    },
-    messages: {
-      recaptcha: {
-        required: 'Validarea reCAPTCHA a eșuat.'
       }
     },
     submitHandler: function (form) {
