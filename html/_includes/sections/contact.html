@@ -6,19 +6,19 @@
         {% if page.slug == 'front' %}
           <form id="contact-form" action="contact.php" method="POST">
             <div class="form-group required">
-              <label for="inputName">Nume și prenume</label>
+              <label class="control-label" for="inputName">Nume și prenume</label>
               <input type="text" class="form-control" id="inputName" name="name" placeholder="Nume" required>
             </div>
             <div class="form-group required">
-              <label for="inputEmail">Adresa de email</label>
+              <label class="control-label" for="inputEmail">Adresa de email</label>
               <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email" required>
             </div>
             <div class="form-group">
-              <label for="inputTel">Numărul de telefon</label>
+              <label class="control-label" for="inputTel">Numărul de telefon</label>
               <input type="tel" class="form-control" id="inputTel" name="tel" placeholder="Telefon">
             </div>
             <div class="form-group required">
-              <label for="inputMessage">Conținutul mesajului</label>
+              <label class="control-label" for="inputMessage">Conținutul mesajului</label>
               <textarea class="form-control" id="inputMessage" name="message" rows="3" placeholder="Mesaj" required></textarea>
             </div>
             <div class="form-group text-center">
