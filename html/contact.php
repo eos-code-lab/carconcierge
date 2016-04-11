@@ -1,6 +1,5 @@
 <?php
-//TODO: Set in config file
-$email_to = 'test.me@mailinator.com';
+require 'functions.php'
 
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -21,6 +20,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      // save message in db
+      save_contact($name, $email, $tel, $message);
+      // prepare and send notification on email
     	$subject = "[CarConcierge - Contact] Mesaj nou de la $name";
       $body = "<b>Nume si prenume:</b> $name <br /> <b>E-mail:</b> $email <br /> <b>Telefon:</b> $tel <br /> <b>Mesaj:</b> $message";
       $headers  = "MIME-Version: 1.1" . PHP_EOL;
