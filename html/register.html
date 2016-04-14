@@ -8,20 +8,51 @@ slug: inmatriculare-auto
 {% include sections/landing-hero.html %}
 <div class="section section-default">
   <div class="container">
-    <h2 class="h3">Ce facem pentru tine?</h2>
-    <ul>
-      <li>Venim să luam actele.</li>
-      <li>Înscriem mașina la DITL.</li>
-      <li>Depunem dosarul la ANAF pentru calculul timbrului de mediu.</li>
-      <li>Plătim toate taxele necesare înmatriculării.</li>
-      <li>Te programăm și te însoțim la RAR (dacă e cazul).</li>
-      <li>Întocmim dosarul pentru plăcuțe și îl depunem la poliție.</li>
-      <li>Ridicăm numerele și ți le aducem.</li>
-    </ul>
-    <h2 class="h3">Cât costă?</h2>
-    <p>Prețul pentru serviciul de înmatriculare auto este de 50 de euro.</p>
-    <h2 class="h3">Ce trebuie să faci tu?</h2>
-    <p>Trebuie să ne suni sau să ne trimiți un mesaj și să ne împuternicești.</p>
+    <div class="row">
+      <div class="col-md-8">
+        <h2 class="h3">Ce facem pentru tine?</h2>
+        <ul>
+          <li>Venim să luam actele.</li>
+          <li>Înscriem mașina la DITL.</li>
+          <li>Depunem dosarul la ANAF pentru calculul timbrului de mediu.</li>
+          <li>Plătim toate taxele necesare înmatriculării.</li>
+          <li>Te programăm și te însoțim la RAR (dacă e cazul).</li>
+          <li>Întocmim dosarul pentru plăcuțe și îl depunem la poliție.</li>
+          <li>Ridicăm numerele și ți le aducem.</li>
+        </ul>
+        <h2 class="h3">Cât costă?</h2>
+        <p>Prețul pentru serviciul de înmatriculare auto este de 50 de euro.</p>
+        <h2 class="h3">Ce trebuie să faci tu?</h2>
+        <p>Trebuie să ne suni sau să ne trimiți un mesaj și să ne împuternicești.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="well">
+          <form id="contact-form" action="contact.php" method="POST">
+            <div class="form-group required">
+              <label class="control-label" for="inputName">Nume și prenume</label>
+              <input type="text" class="form-control" id="inputName" name="name" placeholder="Nume" required>
+            </div>
+            <div class="form-group required">
+              <label class="control-label" for="inputEmail">Adresa de email</label>
+              <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="inputTel">Numărul de telefon</label>
+              <input type="tel" class="form-control" id="inputTel" name="tel" placeholder="Telefon">
+            </div>
+            <div class="form-group required">
+              <label class="control-label" for="inputMessage">Conținutul mesajului</label>
+              <textarea class="form-control" id="inputMessage" name="message" rows="3" placeholder="Mesaj" required></textarea>
+            </div>
+            <div class="form-group text-center">
+              <div class="g-recaptcha" data-sitekey="6LcyDx0TAAAAAIvb0dZ4DoqDHx2P0m1AYOH5gm_f"></div>
+              <input type="hidden" class="recaptcha required" name="recaptcha" id="recaptcha">
+            </div>
+            <p class="text-center"><button type="submit" class="btn btn-outline">Trimiteți-ne un mesaj</button></p>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {% include sections/contact.html %}
