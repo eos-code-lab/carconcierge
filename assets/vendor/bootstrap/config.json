@@ -392,6 +392,7 @@
     "navs.less",
     "navbar.less",
     "thumbnails.less",
+    "wells.less",
     "component-animations.less"
   ],
   "js": [
@@ -399,5 +400,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=17d975a5c01a1973f0cf"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=7bffa6324b6bd6102c3f5a0a6153e916"
 }
