@@ -6,17 +6,30 @@ slug: inmatriculare-auto
 ---
 
 {% include sections/landing-hero.html %}
+<div class="section section-default section-sm">
+  <div class="container">
+    <p>Pretul pentru serviciul de inmatriculare auto este de numai <span class="label label-warning">50€</span>.</p>
+  </div>
+</div>
 <div class="section section-default">
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <h1>Înmatriculare auto</h1>
-        <p>Cu Car Concierge poți să-ți înmatriculezi mașina fără să mai trebuiască să alergi până spre capătul Bucureștiului.</p>
-        <p>Noi putem întocmi dosarul necesar procesului de înregistrare a mașinii, plătim taxele obligatorii, mergem la secția financiară ca să înregistrăm autoturismul și, dacă este cazul, programăm și inspecția RAR. Depunem și ridicăm documentele de la Poliție și îți aducem plăcuțele de înmatriculare acasă.</p>
-        <p>Tu sună-ne. De restul ne ocupăm noi.</p>
+        <h2 class="h3">Servicii de înmatriculare auto</h2>
+        <p>Dacă ai ajuns aici înseamna că știi că înmatricularea unei mașini durează minim două zile, iar pentru tine, timpul este cel mai important.</p>
+        <p>Te întrebi ce facem pentru tine? E simplu:</p>
+        <ul>
+          <li>Venim la tine să preluăm documentele necesare.</li>
+          <li>Înscriem mașina la administrația financiară.</li>
+          <li>Depunem documentele pentru calculul timbrului de mediu la ANAF.</li>
+          <li>Plătim toate taxele necesare înmatriculării.</li>
+          <li>Facem programare la RAR (acolo unde e cazul) și te însoțim.</li>
+          <li>Depunem și ridicăm documentele de la Poliție și îți aducem plăcuțele de înmatriculare acasă.</li>
+        </ul>
+        <p>Știu, acum te întrebi ce trebuie să mai faci tu! Trebuie doar să ne contactezi la telfon +40-740-303-651, prin mail la <a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Contact', 'click', 'gabriel.durbaca@carconcierge.ro')" {% endif %} href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%67%61%62%72%69%65%6c.%64%75%72%62%61%63%61@%63%61%72%63%6f%6e%63%69%65%72%67%65.%72%6f">gabriel.durbaca@carconcierge.ro</a> sau completează formularul alăturat.</p>
       </div>
       <div class="col-md-4">
-        <div class="well">
+        <div class="well well-lg call-to-action">
           <form id="contact-form" action="contact.php" method="POST">
             <div class="form-group required">
               <label class="control-label" for="inputName">Nume și prenume</label>
@@ -45,4 +58,15 @@ slug: inmatriculare-auto
     </div>
   </div>
 </div>
-{% include sections/contact.html %}
+<div class="section section-default">
+  <div class="container">
+    <h1 class="h4 text-center">Informații de contact</h1>
+    <p class="text-center">
+      <a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Contact', 'click', 'gabriel.durbaca@carconcierge.ro')" {% endif %} href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%67%61%62%72%69%65%6c.%64%75%72%62%61%63%61@%63%61%72%63%6f%6e%63%69%65%72%67%65.%72%6f">gabriel.durbaca@carconcierge.ro</a>
+      <br>
+      +40-740-303-651
+    </p>
+    <p>&nbsp;</p>
+    <p class="text-center"><a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Contact', 'click', 'Facebook')" {% endif %} href="https://www.facebook.com/carconcierge.ro" target="_blank"><img src="{{ site.baseurl }}/assets/app/img/icon-fb.png" alt="Facebook Page - carconcierge.ro"></a></p>
+  </div>
+</div>
