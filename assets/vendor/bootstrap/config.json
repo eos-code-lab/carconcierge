@@ -391,6 +391,7 @@
     "glyphicons.less",
     "navs.less",
     "navbar.less",
+    "labels.less",
     "thumbnails.less",
     "wells.less",
     "component-animations.less"
@@ -400,5 +401,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=7bffa6324b6bd6102c3f5a0a6153e916"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=1ede679dfaa3c0b08cce93584e2123cd"
 }
