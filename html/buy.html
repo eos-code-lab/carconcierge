@@ -19,7 +19,9 @@ slug: cumparare-auto
         <p>Știu, acum te întrebi ce trebuie să mai faci tu! Trebuie doar să ne contactezi folosind informațiile de contact sau prin completarea formularul alăturat.</p>
       </div>
       <div class="col-md-4">
-          {% include sections/landing-contact.html %}
+        <div class="well well-lg call-to-action">
+          {% include sections/contact-form.html %}
+        </div>
       </div>
     </div>
   </div>
@@ -29,4 +31,8 @@ slug: cumparare-auto
     <p>Prețul pentru serviciul de consultanță pentru cumpărarea unui autovehicul este de numai <strong><sup>€</sup>300</strong>.</p>
   </div>
 </div>
-{% include sections/landing-contact-info.html %}
+<div class="section section-default">
+  <div class="container">
+    {% include sections/contact-details.html %}
+  </div>
+</div>
