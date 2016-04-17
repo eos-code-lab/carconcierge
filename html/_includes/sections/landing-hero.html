@@ -2,11 +2,21 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <h2>Înmatriculare auto</h2>
-        <p class="lead">Cu Car Concierge poți să-ți înmatriculezi mașina fără să mai trebuiască să alergi până spre capătul Bucureștiului.</p>
+        <h2>{{ page.title }}</h2>
+        {% if page.slug == 'inmatriculare-auto' %}
+          <p class="lead">Cu Car Concierge poți să-ți înmatriculezi mașina fără să mai trebuiască să alergi până spre capătul Bucureștiului.</p>
+        {% endif %}
+        {% if page.slug == 'vanzare-auto' %}
+          <p class="lead">Cu Car Concierge poți să îți vinzi mașina fără să mai ai tu bătăi de cap.</p>
+        {% endif %}
       </div>
       <div class="col-md-4">
-        <p class="text-center invisible"><img alt="Servicii de înmatriculare auto - carconcierge.ro" src="/assets/app/img/car-register.png"></p>
+        {% if page.slug == 'inmatriculare-auto' %}
+          <p class="text-center invisible"><img alt="Servicii de înmatriculare auto - carconcierge.ro" src="/assets/app/img/car-register.png"></p>
+        {% endif %}
+        {% if page.slug == 'vanzare-auto' %}
+          <p class="text-center invisible"><img alt="Servicii de vânzare auto - carconcierge.ro" src="/assets/app/img/car-register.png"></p>
+        {% endif %}
       </div>
     </div>
   </div>

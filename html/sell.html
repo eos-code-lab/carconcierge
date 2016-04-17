@@ -5,26 +5,26 @@ permalink: /vanzare-auto/
 slug: vanzare-auto
 ---
 
-{% include sections/hero.html %}
-<div class="section section-default">
+{% include sections/landing-hero.html %}
+<div class="section section-default section-sm">
   <div class="container">
-    <div class="col-md-9">
-    	<h1>Consultanță pentru vânzarea unui autovehicul</h1>
-    	<p>Cu Car Concierge poți să îți vinzi mașina fără să mai ai tu bătăi de cap. Pașii sunt simpli și doar câțiva: ne suni, apoi ne întâlnim și discutăm despre vânzarea mașinii tale.</p>
-    	<p>Noi îi facem evaluarea, îți comunicăm un preț, atât pentru vânzarea imediată, cât și pentru vânzarea în regim de consignație. Dacă mergi pe a doua variantă, noi publicăm anunțurile pe site-urile de specialitate, te reprezentăm în fața eventualilor cumpărători, negociem prețul și, bineînțeles, ajutăm la întocmirea actelor.</p>
-    	<p>Tu trebuie, așadar, să ții minte 2 cuvinte: Car Concierge. Hai că-i simplu, nu ?</p>
-    </div>
-    <div class="col-md-3 text-center">
-		<div class="thumbnail">
-			<div class="caption">
-				<h1><sup>€</sup>300</h1>
-				<hr class="divider divider-default">
-				<p><img src="{{ site.baseurl }}/assets/app/img/pin-sell.png" alt="Servicii de consultanţă pentru vânzarea unui autoturism"></p>
-				<h1 class="h4">Vindem!</h1>
-			</div>
-			<p class="text-center">* Prețurile afișate sunt orientative.</p>
-		</div>
+    <div class="row">
+        <div class="col-md-8">
+            <h2 class="h3">Consultanță pentru vânzarea unui autovehicul</h2>
+            <hr/>
+            <p>Pașii sunt simpli și doar câțiva: ne suni, apoi ne întâlnim și discutăm despre vânzarea mașinii tale.</p>
+            <p>Noi îi facem evaluarea, îți comunicăm un preț, atât pentru vânzarea imediată, cât și pentru vânzarea în regim de consignație. Dacă mergi pe a doua variantă, noi publicăm anunțurile pe site-urile de specialitate, te reprezentăm în fața eventualilor cumpărători, negociem prețul și, bineînțeles, ajutăm la întocmirea actelor.</p>
+            <p>Tu trebuie, așadar, să ții minte 2 cuvinte: Car Concierge. Hai că-i simplu, nu ?</p>
+        </div>
+        <div class="col-md-4">
+            {% include sections/landing-contact.html %}
+        </div>
     </div>
   </div>
 </div>
-{% include sections/contact.html %}
+<div class="section section-sm">
+  <div class="container">
+    <p>Prețul pentru serviciul de consultanță pentru vânzarea unui autovehicul este de numai <strong><sup>€</sup>300</strong>.</p>
+  </div>
+</div>
+{% include sections/landing-contact-info.html %}
