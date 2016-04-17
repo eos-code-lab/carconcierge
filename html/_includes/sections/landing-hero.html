@@ -3,38 +3,22 @@
     <div class="row">
       <div class="col-md-8">
         <h2>{{ page.title }}</h2>
-        {% if page.slug == 'inmatriculare-auto' %}
-          <p class="lead">Cu Car Concierge poți să-ți înmatriculezi mașina fără să mai trebuiască să alergi până spre capătul Bucureștiului.</p>
-        {% endif %}
-        {% if page.slug == 'vanzare-auto' %}
-          <p class="lead">Cu Car Concierge poți să îți vinzi mașina fără să mai ai tu bătăi de cap.</p>
-        {% endif %}
-        {% if page.slug == 'cumparare-auto' %}
-          <p class="lead">Cu Car Concierge poți să-ți cumperi un autovehicul nou, fără să cheltuieși și timp, pe lângă bani.</p>
-        {% endif %}
-        {% if page.slug == 'intretinere-auto' %}
-          <p class="lead">Cu Car Concierge mașina ta va avea parte de atenția cuvenită, chiar dacă nu te afli tu la volan.</p>
-        {% endif %}
-        {% if page.slug == 'servicii-conexe' %}
-          <p class="lead">Cu Car Concierge poți rezolva orice problemă legată de un autovehicul.</p>
-        {% endif %}
+        <p class="lead">{{ page.description }}</p>
       </div>
       <div class="col-md-4">
-        {% if page.slug == 'inmatriculare-auto' %}
-          <p class="text-center"><img alt="Servicii de înmatriculare auto - carconcierge.ro" src="/assets/app/img/car-register.png"></p>
-        {% endif %}
-        {% if page.slug == 'vanzare-auto' %}
-          <p class="text-center"><img alt="Servicii de vânzare auto - carconcierge.ro" src="/assets/app/img/car-register.png"></p>
-        {% endif %}
-        {% if page.slug == 'cumparare-auto' %}
-          <p class="text-center"><img alt="Servicii de cumpărare auto - carconcierge.ro" src="/assets/app/img/car-register.png"></p>
-        {% endif %}
-        {% if page.slug == 'intretinere-auto' %}
-          <p class="text-center"><img alt="Servicii de întreţinere auto - carconcierge.ro" src="/assets/app/img/car-register.png"></p>
-        {% endif %}
-        {% if page.slug == 'servicii-conexe' %}
-          <p class="text-center"><img alt="Servicii conexe pentru întreţinere auto - carconcierge.ro" src="/assets/app/img/car-register.png"></p>
-        {% endif %}
+        <p class="text-center">
+          {% if page.slug == 'cumparare-auto' %}
+            <img alt="Servicii de cumpărare auto - carconcierge.ro" src="/assets/app/img/car-buy.png">
+          {% elsif page.slug == 'intretinere-auto' %}
+            <img alt="Servicii de întreţinere auto - carconcierge.ro" src="/assets/app/img/car-maintain.png">
+          {% elsif page.slug == 'inmatriculare-auto' %}
+            <img alt="Servicii de înmatriculare auto - carconcierge.ro" src="/assets/app/img/car-register.png">
+          {% elsif page.slug == 'vanzare-auto' %}
+            <img alt="Servicii de vânzare auto - carconcierge.ro" src="/assets/app/img/car-sell.png">
+          {% elsif page.slug == 'servicii-conexe' %}
+            <img alt="Servicii conexe pentru întreţinere auto - carconcierge.ro" src="/assets/app/img/car-register.png">
+          {% endif %}
+        </p>
       </div>
     </div>
   </div>
