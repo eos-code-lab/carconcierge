@@ -5,26 +5,25 @@ permalink: /servicii-conexe/
 slug: servicii-conexe
 ---
 
-{% include sections/hero.html %}
-<div class="section section-default">
+{% include sections/landing-hero.html %}
+<div class="section section-default section-sm">
   <div class="container">
-    <div class="col-md-9">
-    	<h1>Servicii conexe</h1>
-    	<p>Cu Car Concierge poți rezolva orice problemă legată de un autovehicul.</p>
-    	<p>Putem face asigurări sau oferi consultanță pentru credit, leasing financiar sau operațional. Putem asigura închirierea unei mașini, exportul de mașini sau procurarea de piese auto.</p>
-		<p>Contactează Car Concierge și spune-ne care-i problema cu mașina. De aici încolo ne ocupăm noi.</p>
-    </div>
-    <div class="col-md-3 text-center">
-    	<div class="thumbnail">
-			<div class="caption">
-				<h1><sup>€</sup>?</h1>
-				<hr class="divider divider-default">
-				<p><img src="{{ site.baseurl }}/assets/app/img/car-keys.png" alt="Servicii auto conexe"></p>
-				<h1 class="h4">Orice ține de mașina ta!</h1>
-			</div>
-			<p class="text-center">* Vă rugăm să ne contactați.</p>
-		</div>
+    <div class="row">
+        <div class="col-md-8">
+            <h2 class="h3">Servicii conexe</h2>
+            <hr/>
+            <p>Putem face asigurări sau oferi consultanță pentru credit, leasing financiar sau operațional. Putem asigura închirierea unei mașini, exportul de mașini sau procurarea de piese auto.</p>
+            <p>Contactează Car Concierge și spune-ne care-i problema cu mașina. De aici încolo ne ocupăm noi.</p>
+        </div>
+        <div class="col-md-4">
+            {% include sections/landing-contact.html %}
+        </div>
     </div>
   </div>
 </div>
-{% include sections/contact.html %}
+<div class="section section-sm">
+  <div class="container">
+    <p>Prețul pentru serviciile conexe pot fi comunicate atunci când ne contactați și ne spuneți cu ce vă putem ajuta.</p>
+  </div>
+</div>
+{% include sections/landing-contact-info.html %}
