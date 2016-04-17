@@ -1,8 +1,24 @@
-<div class="section section-primary">
+<div class="section section-secondary">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <p class="lead text-center">Cât timp pierde un șofer inteligent pentru a rezolva toate actele mașinii? <mark class="text-nowrap">Niciun moment.</mark></p>
+      <div class="col-md-8">
+        <h2>{{ page.title }}</h2>
+        <p class="lead">{{ page.description }}</p>
+      </div>
+      <div class="col-md-4">
+        <p class="text-center">
+          {% if page.slug == 'cumparare-auto' %}
+            <img alt="Servicii de cumpărare auto - carconcierge.ro" src="/assets/app/img/car-buy.png">
+          {% elsif page.slug == 'intretinere-auto' %}
+            <img alt="Servicii de întreţinere auto - carconcierge.ro" src="/assets/app/img/car-maintain.png">
+          {% elsif page.slug == 'inmatriculare-auto' %}
+            <img alt="Servicii de înmatriculare auto - carconcierge.ro" src="/assets/app/img/car-register.png">
+          {% elsif page.slug == 'vanzare-auto' %}
+            <img alt="Servicii de vânzare auto - carconcierge.ro" src="/assets/app/img/car-sell.png">
+          {% elsif page.slug == 'servicii-conexe' %}
+            <img alt="Servicii conexe pentru întreţinere auto - carconcierge.ro" src="/assets/app/img/car-register.png">
+          {% endif %}
+        </p>
       </div>
     </div>
   </div>
