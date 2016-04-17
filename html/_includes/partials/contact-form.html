@@ -16,7 +16,7 @@
     <textarea class="form-control" id="inputMessage" name="message" rows="3" placeholder="Mesaj" required></textarea>
   </div>
   <div class="form-group text-center">
-    <div class="g-recaptcha" data-sitekey="6LcyDx0TAAAAAIvb0dZ4DoqDHx2P0m1AYOH5gm_f"></div>
+    <div class="g-recaptcha" data-sitekey="{{ site.recaptcha_sitekey }}"></div>
     <input type="hidden" class="recaptcha required" name="recaptcha" id="recaptcha">
   </div>
   <p class="text-center"><button type="submit" class="btn btn-outline">Trimiteți-ne un mesaj</button></p>
