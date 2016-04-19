@@ -21,6 +21,9 @@
 <script src="https://www.google.com/recaptcha/api.js?hl=ro"></script>
 <script src="{{ site.baseurl }}/assets/app/js/application.min.js"></script>
 {% if jekyll.environment == 'production' %}
+  {% comment %}
+    Google Analytics
+  {% endcomment %}
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -31,42 +34,53 @@
     ga('require', 'displayfeatures');
     ga('send', 'pageview');
   </script>
+  {% comment %}
+    AdWords Remarketing Tag
+  {% endcomment %}
   <script type="text/javascript">
+    /* <![CDATA[ */
     var google_conversion_id = {{ site.google_conversion_id }};
     var google_custom_params = window.google_tag_params;
     var google_remarketing_only = true;
+    /* ]]> */
   </script>
-  <div class="hidden"><script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script></div>
+  <div class="hidden"><script src="//www.googleadservices.com/pagead/conversion.js"></script></div>
   <noscript>
-    <div style="display:inline;">
-      <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/966795271/?value=0&amp;guid=ON&amp;script=0"/>
+    <div style="display: inline;">
+      <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/{{ site.google_conversion_id }}/?value=0&amp;guid=ON&amp;script=0">
     </div>
   </noscript>
-  <!-- Google Code for Contact Conversion Page In your html page, add the snippet and call goog_report_conversion when someone clicks on the chosen link or button. -->
-  <script type="text/javascript">
+  {% comment %}
+    AdWords Conversion Tag
+  {% endcomment %}
+  <script>
     /* <![CDATA[ */
-    goog_snippet_vars = function() {
-      var w = window;
-      w.google_conversion_id = {{ site.google_conversion_id }};
-      w.google_conversion_label = '{{ site.google_conversion_label }}';
-      w.google_remarketing_only = false;
+    goog_snippet_vars = function () {
+      window.google_conversion_id = {{ site.google_conversion_id }};
+      window.google_conversion_label = '{{ site.google_conversion_label }}';
+      window.google_remarketing_only = false;
     }
-    // DO NOT CHANGE THE CODE BELOW.
-    goog_report_conversion = function(url) {
+
+    goog_report_conversion = function (url) {
       goog_snippet_vars();
-      window.google_conversion_format = "3";
+
+      window.google_conversion_format = '3';
+
       var opt = new Object();
-      opt.onload_callback = function() {
-        if (typeof(url) != 'undefined') {
+
+      opt.onload_callback = function () {
+        if (typeof(url) !== 'undefined') {
           window.location = url;
         }
       }
+
       var conv_handler = window['google_trackConversion'];
-      if (typeof(conv_handler) == 'function') {
+
+      if (typeof(conv_handler) === 'function') {
         conv_handler(opt);
       }
     }
     /* ]]> */
   </script>
-  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+  <script src="//www.googleadservices.com/pagead/conversion_async.js"></script>
 {% endif %}
