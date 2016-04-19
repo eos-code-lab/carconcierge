@@ -7,16 +7,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Navbar', 'click', 'Car Concierge')" {% endif %} class="navbar-brand" href="{{ site.baseurl }}/#" data-trigger="scroll">
+      <a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Navbar', 'click', 'Car Concierge')" {% endif %} class="navbar-brand" {% if page.slug == 'front' %} href="#" data-trigger="scroll" {% else %} href="{{ site.baseurl }}/" {% endif %}>
         <img src="{{ site.baseurl }}/assets/app/img/brand-header.png" alt="Car Concierge - Servicii de consultanţă auto">
       </a>
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Navbar', 'click', 'Despre noi')" {% endif %} href="{{ site.baseurl }}/#despre-noi" data-trigger="scroll">Despre noi</a></li>
-        <li><a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Navbar', 'click', 'Servicii')" {% endif %} href="{{ site.baseurl }}/#servicii" data-trigger="scroll">Servicii</a></li>
-        <li><a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Navbar', 'click', 'Tarife')" {% endif %} href="{{ site.baseurl }}/#tarife" data-trigger="scroll">Tarife</a></li>
-        <li><a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Navbar', 'click', 'Contact')" {% endif %} href="{{ site.baseurl }}/#contact" data-trigger="scroll">Contact</a></li>
+        <li><a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Navbar', 'click', 'Despre noi')" {% endif %} {% if page.slug == 'front' %} href="#despre-noi" data-trigger="scroll" {% else %} href="{{ site.baseurl }}/#despre-noi" {% endif %}>Despre noi</a></li>
+        <li><a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Navbar', 'click', 'Servicii')" {% endif %} {% if page.slug == 'front' %} href="#servicii" data-trigger="scroll" {% else %} href="{{ site.baseurl }}/#servicii" {% endif %}>Servicii</a></li>
+        <li><a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Navbar', 'click', 'Tarife')" {% endif %} {% if page.slug == 'front' %} href="#tarife" data-trigger="scroll" {% else %} href="{{ site.baseurl }}/#tarife" {% endif %}>Tarife</a></li>
+        <li><a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Navbar', 'click', 'Contact')" {% endif %} {% if page.slug == 'front' %} href="#contact" data-trigger="scroll" {% else %} href="{{ site.baseurl }}/#contact" {% endif %}>Contact</a></li>
       </ul>
     </div>
   </div>
