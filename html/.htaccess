@@ -1,3 +1,6 @@
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
 </IfModule>
+<IfModule mod_headers.c>
+  Header append Cache-Control s-maxage=600 "expr=%{REQUEST_STATUS} == 200"
+</IfModule>
