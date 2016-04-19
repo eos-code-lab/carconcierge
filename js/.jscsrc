@@ -2,5 +2,10 @@
   "disallowSpacesInAnonymousFunctionExpression": null,
   "disallowSpacesInFunctionExpression": null,
   "maximumLineLength": null,
-  "preset": "google"
+  "preset": "google",
+  "requireCamelCaseOrUpperCaseIdentifiers": {
+    "allExcept": [
+      'goog_report_conversion'
+    ]
+  }
 }

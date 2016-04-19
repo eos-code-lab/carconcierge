@@ -6,6 +6,7 @@
   "extends": "eslint:recommended",
   "globals": {
     "ga": false,
+    "goog_report_conversion": false,
     "grecaptcha": false,
     "Handlebars": false
   },

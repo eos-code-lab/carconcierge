@@ -105,7 +105,11 @@
     },
     submitHandler: function (form) {
       if (typeof ga === 'function') {
-        ga('send', 'event', 'Formular', 'Contact', 'Trimite');
+        ga('send', 'event', 'Contact', 'submit', 'Trimiteți-ne un mesaj');
+      }
+
+      if (typeof goog_report_conversion === 'function') {
+        goog_report_conversion();
       }
 
       form.submit();
