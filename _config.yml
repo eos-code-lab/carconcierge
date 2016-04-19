@@ -9,23 +9,23 @@ encoding: utf-8
 port:     4000
 host:     127.0.0.1
 baseurl:  ""
-url:      "http://carconcierge.ro"
+url:      http://carconcierge.ro
 
 # Permalinks
 permalink:  pretty
 
 # Site settings
-title: Car Concierge
-tagline: Timp liber de la prima cheie
-description: "Car Concierge oferă servicii de preluare şi predare autoturisme, înmatriculări auto, consultanţă vânzare autoturisme second hand şi consultanţă achiziţie autoturisme noi."
-author: EOS Code Lab
+title:        Car Concierge
+tagline:      Timp liber de la prima cheie
+description:  "Car Concierge oferă servicii de preluare şi predare autoturisme, înmatriculări auto, consultanţă vânzare autoturisme second hand şi consultanţă achiziţie autoturisme noi."
+author:       EOS Code Lab
 
 # Google Analytics
 ga_property: UA-72143000-1 # Tracking ID
 
 # Google AdWords
-google_conversion_id: 966795271
-google_conversion_label: kMo8CKWJp2UQh8CAzQM
+google_conversion_id:     966795271
+google_conversion_label:  "kMo8CKWJp2UQh8CAzQM"
 
 # reCAPTCHA
-recaptcha_sitekey: 6LcyDx0TAAAAAIvb0dZ4DoqDHx2P0m1AYOH5gm_f
+recaptcha_sitekey: "6LcyDx0TAAAAAIvb0dZ4DoqDHx2P0m1AYOH5gm_f"
