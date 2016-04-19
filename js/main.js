@@ -9,7 +9,10 @@
   });
 
   $('#navbar').on('activate.bs.scrollspy', function (event) {
-    var label = $(event.target).text();
+    var $element = $(event.target);
+    var label = $element.text();
+
+    window.history.replaceState({}, '', $('> a', $element).attr('href'));
 
     if (typeof ga === 'function') {
       ga('send', 'event', 'ScrollSpy', 'activate', label);
