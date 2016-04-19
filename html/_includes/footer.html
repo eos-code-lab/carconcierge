@@ -1,7 +1,11 @@
 <footer class="footer">
-  <div class="container">
+  <div class="container" itemscope itemtype="http://schema.org/LocalBusiness">
+    <span class="hide" itemprop="name">Car Concierge</span>
+    <span class="hide" itemprop="description">Servicii de consultanţă - vânzare, cumpărare, întreţinere sau înmatriculare auto.</span>
     <p>
-      <a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Footer', 'click', 'Car Concierge')" {% endif %} href="{{ site.baseurl }}/#" data-trigger="scroll"><img src="{{ site.baseurl }}/assets/app/img/brand-footer.png" alt="Car Concierge - Servicii de consultanţă - vânzare, cumpărare, întreţinere sau înmatriculare"></a>
+      <a {% if jekyll.environment == 'production' %} onclick="ga('send', 'event', 'Footer', 'click', 'Car Concierge')" {% endif %} href="{{ site.baseurl }}/#" data-trigger="scroll">
+        <img src="{{ site.baseurl }}/assets/app/img/brand-footer.png" alt="Car Concierge - Servicii de consultanţă - vânzare, cumpărare, întreţinere sau înmatriculare">
+      </a>
     </p>
     <p>&copy; 2015-2016 Car Concierge. Toate drepturile rezervate.</p>
   </div>
