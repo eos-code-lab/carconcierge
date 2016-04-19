@@ -104,6 +104,10 @@
       }
     },
     submitHandler: function (form) {
+      if (typeof ga === 'function') {
+        ga('send', 'event', Formular, Contact, Trimite);
+      }
+
       form.submit();
     }
   });
