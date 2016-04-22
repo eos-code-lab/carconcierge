@@ -31,7 +31,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         'message' => $message,
         )
       );
-      send_mail(MESSAGE_TYPE_THANK_YOU, $email);
+      send_mail(MESSAGE_TYPE_THANK_YOU, $email, array('name' => $name));
       //TODO: Add log message "Notification e-mail sent!"
     	header('Location: /');
     } else {
