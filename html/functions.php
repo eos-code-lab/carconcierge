@@ -23,9 +23,9 @@ function send_mail($type, $to, $contact_form = array()) {
 	$headers  = "MIME-Version: 1.1" . PHP_EOL;
 	$headers .= "Content-type: text/html; charset=utf-8" . PHP_EOL;
 	$headers .= "Content-Transfer-Encoding: 8bit" . PHP_EOL;
-	$headers .= "From: ${contact_form['name']} <${contact_form['email']}>" . PHP_EOL;
+	$headers .= "From: CarConcierge <gabriel.durbaca@carconcierge.ro>" . PHP_EOL;
 	$headers .= "Return-Path: $to" . PHP_EOL;
-	$headers .= "Reply-To: ${contact_form['email']}" . PHP_EOL;
+	$headers .= "Reply-To: gabriel.durbaca@carconcierge.ro" . PHP_EOL;
 	$headers .= "X-Mailer: PHP/". phpversion() . PHP_EOL;
 	$headers .= "X-Originating-IP: " . $_SERVER['SERVER_ADDR'] . PHP_EOL;
 
