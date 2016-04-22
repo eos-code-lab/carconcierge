@@ -35,8 +35,8 @@ function send_mail($type, $to, $contact_form = array()) {
 		mail($to, $subject, $body, $headers);
 	} else {
 		if (!empty($contact_form)) {
-			$subject = "[CarConcierge - Contact] Mesaj nou de la $contact_form['name']";
-			$body = "<b>Nume si prenume:</b> $contact_form['name'] <br /> <b>E-mail:</b> $contact_form['email'] <br /> <b>Telefon:</b> $contact_form['tel'] <br /> <b>Mesaj:</b> $contact_form['message']";
+			$subject = "[CarConcierge - Contact] Mesaj nou de la ${contact_form['name']}";
+			$body = "<b>Nume si prenume:</b> ${contact_form['name']} <br /> <b>E-mail:</b> ${contact_form['email']} <br /> <b>Telefon:</b> ${contact_form['tel']} <br /> <b>Mesaj:</b> ${contact_form['message']}";
 			mail($to, $subject, $body, $headers);
 		}
 	}

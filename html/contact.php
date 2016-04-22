@@ -1,5 +1,5 @@
 <?php
-require 'functions.php'
+require 'functions.php';
 
 $email_to = 'gabriel.durbaca@carconcierge.ro, ifrim.claudia@gmail.com';
 
