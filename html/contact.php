@@ -1,5 +1,6 @@
 <?php
-// require 'functions.php'
+require 'functions.php'
+
 $email_to = 'gabriel.durbaca@carconcierge.ro, ifrim.claudia@gmail.com';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -22,18 +23,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
       // save message in db
       // save_contact($name, $email, $tel, $message);
-      // prepare and send notification on email
-    	$subject = "[CarConcierge - Contact] Mesaj nou de la $name";
-      $body = "<b>Nume si prenume:</b> $name <br /> <b>E-mail:</b> $email <br /> <b>Telefon:</b> $tel <br /> <b>Mesaj:</b> $message";
-      $headers  = "MIME-Version: 1.1" . PHP_EOL;
-      $headers .= "Content-type: text/html; charset=utf-8" . PHP_EOL;
-      $headers .= "Content-Transfer-Encoding: 8bit" . PHP_EOL;
-      $headers .= "From: $name <$email>" . PHP_EOL;
-      $headers .= "Return-Path: $email_to" . PHP_EOL;
-      $headers .= "Reply-To: $email" . PHP_EOL;
-      $headers .= "X-Mailer: PHP/". phpversion() . PHP_EOL;
-      $headers .= "X-Originating-IP: " . $_SERVER['SERVER_ADDR'] . PHP_EOL;
-      mail($email_to, $subject, $body, $headers);
+      // send notification on email for admins and send thank you message to client
+      send_mail(MESSAGE_TYPE_NOTIFICATION, $email_to, array(
+        'name' => $name,
+        'email' => $email,
+        'tel' => $tel,
+        'message' => $message,
+        )
+      );
+      send_mail(MESSAGE_TYPE_THANK_YOU, $email);
       //TODO: Add log message "Notification e-mail sent!"
     	header('Location: /');
     } else {
