@@ -31,12 +31,12 @@ function send_mail($type, $to, $contact_form = array()) {
 
 	if ($type === MESSAGE_TYPE_THANK_YOU) {
 		$subject = "[CarConcierge] Multumim pentru mesajul trimis!";
-		$body = "Multumim pentru mesajul trimis!<br/>Va vom contacta in cel mai scrurt timp!<br/><br/>Echipa Car Concierge<br/>www.carconcierge.ro";
+		$body = "Salut ${contact_form['name']},<br /><br />Iti multumim pentru mesaj.<br />Vei fi contactat in cel mai scurt timp posibil, de obicei nu mai mult de doua ore.<br /><br />Programul de functionare: Luni-Vineri, 09-18<br /><br />Echipa Car Concierge<br /><a href='http://carconcierge.ro/'>www.carconcierge.ro</a>";
 		mail($to, $subject, $body, $headers);
 	} else {
 		if (!empty($contact_form)) {
 			$subject = "[CarConcierge - Contact] Mesaj nou de la ${contact_form['name']}";
-			$body = "<b>Nume si prenume:</b> ${contact_form['name']} <br /> <b>E-mail:</b> ${contact_form['email']} <br /> <b>Telefon:</b> ${contact_form['tel']} <br /> <b>Mesaj:</b> ${contact_form['message']}";
+			$body = "<b>Nume si prenume:</b> ${contact_form['name']}<br /><b>E-mail:</b> ${contact_form['email']}<br /><b>Telefon:</b> ${contact_form['tel']}<br /><b>Mesaj:</b> ${contact_form['message']}";
 			mail($to, $subject, $body, $headers);
 		}
 	}
