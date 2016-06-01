@@ -26,6 +26,7 @@ ga_property: UA-72143000-1 # Tracking ID
 # Google AdWords
 google_conversion_id:     966795271
 google_conversion_label:  "kMo8CKWJp2UQh8CAzQM"
+google_conversion_label_call: "lJX7CKjC82YQh8CAzQM"
 
 # reCAPTCHA
 recaptcha_sitekey: "6LcyDx0TAAAAAIvb0dZ4DoqDHx2P0m1AYOH5gm_f"
