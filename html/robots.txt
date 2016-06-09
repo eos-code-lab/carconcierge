@@ -1,0 +1,5 @@
+User-agent: *
+Crawl-delay: 10
+Disallow: /contact.php
+Disallow: /config.php
+Disallow: /functions.php
