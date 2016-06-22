@@ -44,11 +44,9 @@
     AdWords Remarketing Tag
   {% endcomment %}
   <script type="text/javascript">
-    /* <![CDATA[ */
     var google_conversion_id = {{ site.google_conversion_id }};
     var google_custom_params = window.google_tag_params;
     var google_remarketing_only = true;
-    /* ]]> */
   </script>
   <div class="hidden"><script src="//www.googleadservices.com/pagead/conversion.js"></script></div>
   <noscript>
@@ -59,61 +57,63 @@
   {% comment %}
     AdWords Conversion Tag
   {% endcomment %}
-  <script type="text/javascript">
-    /* <![CDATA[ */
-    goog_snippet_vars = function() {
-      var w = window;
-      w.google_conversion_id = 966795271;
-      w.google_conversion_label = "kMo8CKWJp2UQh8CAzQM";
-      w.google_remarketing_only = false;
+  <script>
+    goog_snippet_vars = function () {
+      window.google_conversion_id = {{ site.google_conversion_id }};
+      window.google_conversion_label = '{{ site.google_conversion_label }}';
+      window.google_remarketing_only = false;
     }
-    // DO NOT CHANGE THE CODE BELOW.
-    goog_report_conversion = function(url) {
+
+    goog_report_conversion = function (url) {
       goog_snippet_vars();
-      window.google_conversion_format = "3";
+
+      window.google_conversion_format = '3';
+
       var opt = new Object();
-      opt.onload_callback = function() {
-      if (typeof(url) != 'undefined') {
-        window.location = url;
+
+      opt.onload_callback = function () {
+        if (typeof url !== 'undefined') {
+          window.location = url;
+        }
+      }
+
+      var conv_handler = window.google_trackConversion;
+
+      if (typeof conv_handler === 'function') {
+        conv_handler(opt);
       }
     }
-    var conv_handler = window['google_trackConversion'];
-    if (typeof(conv_handler) == 'function') {
-      conv_handler(opt);
-    }
-  }
-  /* ]]> */
   </script>
-  <script type="text/javascript"
-    src="//www.googleadservices.com/pagead/conversion_async.js">
-  </script>
+  <script src="//www.googleadservices.com/pagead/conversion_async.js"></script>
   {% comment %}
     Google Code for Apel Conversion Page
   {% endcomment %}
   <script type="text/javascript">
-    /* <![CDATA[ */
-    goog_snippet_vars = function() {
-      var w = window;
-      w.google_conversion_id = 966795271;
-      w.google_conversion_label = '{{ site.google_conversion_label_call }}';
-      w.google_remarketing_only = false;
+    goog_snippet_vars = function () {
+      window.google_conversion_id = 966795271;
+      window.google_conversion_label = '{{ site.google_conversion_label_call }}';
+      window.google_remarketing_only = false;
     }
-    // DO NOT CHANGE THE CODE BELOW.
-    goog_report_conversion = function(url) {
+
+    goog_report_conversion = function (url) {
       goog_snippet_vars();
-      window.google_conversion_format = "3";
+
+      window.google_conversion_format = '3';
+
       var opt = new Object();
+
       opt.onload_callback = function() {
-        if (typeof(url) != 'undefined') {
+        if (typeof url  !== 'undefined') {
           window.location = url;
         }
       }
-      var conv_handler = window['google_trackConversion'];
-      if (typeof(conv_handler) == 'function') {
+
+      var conv_handler = window.google_trackConversion;
+
+      if (typeof conv_handler  === 'function') {
         conv_handler(opt);
       }
     }
-    /* ]]> */
   </script>
   <script src="//www.googleadservices.com/pagead/conversion_async.js"></script>
 {% endif %}
