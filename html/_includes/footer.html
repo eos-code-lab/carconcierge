@@ -89,14 +89,14 @@
     Google Code for Apel Conversion Page
   {% endcomment %}
   <script type="text/javascript">
-    goog_snippet_vars = function () {
+    goog_snippet_vars_call = function () {
       window.google_conversion_id = {{ site.google_conversion_id }};
       window.google_conversion_label = '{{ site.google_conversion_label_call }}';
       window.google_remarketing_only = false;
     }
 
     goog_report_conversion_call = function (url) {
-      goog_snippet_vars();
+      goog_snippet_vars_call();
 
       window.google_conversion_format = '3';
 
