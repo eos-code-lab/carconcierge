@@ -20,6 +20,16 @@ tagline:      Timp liber de la prima cheie
 description:  "Car Concierge oferă servicii de preluare şi predare autoturisme, înmatriculări auto, consultanţă vânzare autoturisme second hand şi consultanţă achiziţie autoturisme noi."
 author:       EOS Code Lab
 
+# Timezone
+timezone: Europe/Bucharest
+
+# Gems
+gems: [jekyll-paginate]
+
+# Blog pagination
+paginate: 5
+paginate_path: blog/page:num
+
 # Google Analytics
 ga_property: UA-72143000-1 # Tracking ID
 
