@@ -10,6 +10,7 @@ title: Cine este vinovat pentru cozile interminabile de la DRPCIV?
 5. Conducerea DRPCIV sau MAI?
 
 Eu zic ca toți, iată de ce:
+
 1. Guvernul a dorit să ușureze munca contribuabilului și a emis o normă prin care taxa de talon de 37 lei să nu se mai plătească la CEC, ci prin O.P. (ordin de plată), mandat poștal, direct la caseria Trezoreriei Sector 5 sau la ghiseul DRPCIV, alături de taxa de plăcuțe de înmatriculare. Sună bine, dar rezultatul a fost unul dezastruos, estimez că 80% din contribuabili plătesc în numerar la ghișeu, adică lucrătorul DRPCIV în loc să nu mai facă nicio chitanță, face două.
 2. Da, românii cumpără din nou mașini! Din păcate foarte multe mașini vechi, de peste 10 ani.
 3. Dealerii au început să încaseze avans pentru mașinile vândute prin programul rabla înca din luna Martie, iar programul a început abia în luna Iunie, ceea ce a generat un val imens de radieri în această perioadă.
