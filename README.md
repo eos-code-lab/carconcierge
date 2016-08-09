@@ -2,6 +2,9 @@
 
 Car Concierge oferă servicii de preluare şi predare autoturisme, înmatriculări auto, consultanţă vânzare autoturisme second hand şi consultanţă achiziţie autoturisme noi.
 
+### Markdown Cheatsheet
+[Write posts using Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers)
+
 ## Copyright and License
 
 Copyright © 2015-2016 EOS Code Lab
