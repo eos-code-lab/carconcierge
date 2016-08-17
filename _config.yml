@@ -23,19 +23,19 @@ author:       EOS Code Lab
 # Timezone
 timezone: Europe/Bucharest
 
-# Gems
+# Plugins
 gems: [jekyll-paginate]
 
-# Blog pagination
-paginate: 5
-paginate_path: blog/page:num
+# Pagination
+paginate:       5
+paginate_path:  blog/pagina:num/
 
 # Google Analytics
 ga_property: UA-72143000-1 # Tracking ID
 
 # Google AdWords
-google_conversion_id:     966795271
-google_conversion_label:  "kMo8CKWJp2UQh8CAzQM"
+google_conversion_id:         966795271
+google_conversion_label:      "kMo8CKWJp2UQh8CAzQM"
 google_conversion_label_call: "lJX7CKjC82YQh8CAzQM"
 
 # reCAPTCHA
