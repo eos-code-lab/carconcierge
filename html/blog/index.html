@@ -22,11 +22,11 @@ slug: blog
             <div class="entry">
               {{ post.excerpt }}
             </div>
-            <a href="{{ post.url | prepend: site.baseurl }}" class="read-more">Mai mult</a>
+            <p><a href="{{ post.url | prepend: site.baseurl }}" class="read-more">Mai mult</a></p>
           {% endfor %}
         </div>
         {% if paginator.total_pages > 1 %}
-          <nav aria-label="Navigare pagini">
+          <nav class="text-center" aria-label="Navigare pagini">
             <ul class="pagination">
               {% if paginator.previous_page %}
                 <li>
