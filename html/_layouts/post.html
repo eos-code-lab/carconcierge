@@ -2,17 +2,46 @@
 layout: default
 ---
 
+<div class="section section-secondary">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Blog</h2>
+        <p class="lead">Cu Car Concierge poți rezolva orice problemă legată de un autovehicul.</p>
+      </div>
+      <div class="col-md-4">
+        <p class="text-center">
+          <img alt="Blog - carconcierge.ro" src="/assets/app/img/car-other.png">
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="section section-default">
   <div class="container">
-    <h2 class="h3">{{ page.title }}</h2>
-    <p class="date">
-      <small>
-        <span class="glyphicon glyphicon-time"></span>
-        {{ page.date | date: '%e %B %Y' }}
-      </small>
-    </p>
-    <div class="entry">
-      {{ content }}
+    <div class="row">
+      <div class="col-md-8">
+        <h2 class="h3">{{ page.title }}</h2>
+        <p class="date">
+          <small>
+            <span class="glyphicon glyphicon-time"></span>
+            {{ page.date | date: '%e %B %Y' }}
+          </small>
+        </p>
+        <div class="entry">
+          {{ content }}
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="well well-lg call-to-action">
+          {% include partials/contact-form.html %}
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+<div class="section section-default">
+  <div class="container">
+    {% include partials/contact-details.html %}
   </div>
 </div>
