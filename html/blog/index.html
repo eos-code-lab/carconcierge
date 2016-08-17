@@ -13,6 +13,12 @@ slug: blog
         <div class="posts">
           {% for post in paginator.posts %}
             <h2 class="h3"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+            <p class="date">
+              <small>
+                <span class="glyphicon glyphicon-time"></span>
+                {{ post.date | date: '%e %B %Y' }}
+              </small>
+            </p>
             <div class="entry">
               {{ post.excerpt }}
             </div>
