@@ -31,7 +31,7 @@ layout: default
         <div class="entry">
           {{ content }}
         </div>
-        <div class="row">
+        <div class="row post-footer">
           <div class="col-md-8">
             <div class="post-tags pull-left">
               {% if page.tags.size > 0 %}
@@ -53,10 +53,10 @@ layout: default
                   <span><strong>Distribuie articolul:</strong></span>
                 </li>
     				    <li>
-    				    	<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Distribuie pe Facebook"><i class="fa fa-facebook"></i></a>
+    				    	<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Distribuie pe Facebook"><img src="{{ site.baseurl }}/assets/app/img/icon-facebook-color.png" alt="Distribuie pe Facebook - {{ page.title }} - carconcierge.ro"></a>
     				    </li>
     				    <li>
-    				    	<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Distribuie pe Google+"><i class="fa fa-google-plus"></i></a>
+    				    	<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Distribuie pe Google+"><img src="{{ site.baseurl }}/assets/app/img/icon-google-plus-color.png" alt="Distribuie pe Google+ - {{ page.title }} - carconcierge.ro"></a>
     				    </li>
     			    </ul>	
     			  </div>
