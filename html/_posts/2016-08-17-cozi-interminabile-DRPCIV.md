@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Cine este vinovat pentru cozile interminabile de la DRPCIV?
+tags: [DRPCIV, înmatriculare, legislație]
 ---
 
 1. Guvernul - datorită ordonanței de simplificare a procesului de înmatriculare?

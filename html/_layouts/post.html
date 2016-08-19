@@ -32,7 +32,21 @@ layout: default
           {{ content }}
         </div>
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-8">
+            <div class="post-tags pull-left">
+              {% if page.tags.size > 0 %}
+              <ul class="list-inline">
+                <li>
+                  <span><strong>Etichete:</strong></span>
+                </li>
+                {% for tag in page.tags %}
+                  <li><a href="#">{{ tag }}</a></li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </div>
+          </div>
+          <div class="col-md-4">
           	<div class="social-share pull-right">
     			    <ul class="list-inline">
                 <li>
