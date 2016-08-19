@@ -32,7 +32,7 @@ layout: default
           {{ content }}
         </div>
         <div class="row post-footer">
-          <div class="col-md-8">
+          <div class="col-md-6">
             <div class="post-tags pull-left">
               {% if page.tags.size > 0 %}
               <ul class="list-inline">
@@ -46,7 +46,7 @@ layout: default
               {% endif %}
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6">
           	<div class="social-share pull-right">
     			    <ul class="list-inline">
                 <li>
@@ -58,6 +58,9 @@ layout: default
     				    <li>
     				    	<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Distribuie pe Google+"><img src="{{ site.baseurl }}/assets/app/img/icon-google-plus-color.png" alt="Distribuie pe Google+ - {{ page.title }} - carconcierge.ro"></a>
     				    </li>
+                <li>
+                  <a href="https://twitter.com/intent/tweet?text='{{ page.title | cgi_escape }}'&amp;url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Distribuie pe Twitter"><img src="{{ site.baseurl }}/assets/app/img/icon-twitter-color.png" alt="Distribuie pe Twitter - {{ page.title }} - carconcierge.ro"></a>
+                </li>
     			    </ul>	
     			  </div>
           </div>
