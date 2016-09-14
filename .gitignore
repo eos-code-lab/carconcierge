@@ -1,6 +1,7 @@
 # Build generated files
 /dist
 /html/assets
+/html/config.php
 
 # OS generated files
 ._*
