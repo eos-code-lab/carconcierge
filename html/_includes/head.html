@@ -1,7 +1,11 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="{{ site.description }}">
+{% if page.description %}
+  <meta content="{{ page.description }}" property="og:description">
+{% else %}
+  <meta content="{{ site.description }}" property="og:description">
+{% endif %}
 <meta name="author" content="{{ site.author }}">
 <meta name="google-site-verification" content="0I2xeJ2BNWaF6ZwzqYNPH1oQtkoXhtNZ7p27se7buQs">
 <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
