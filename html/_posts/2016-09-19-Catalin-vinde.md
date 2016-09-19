@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Cătălin vinde!
+description: "Ai 8000 de euro? Cătălin îşi vinde una din cele două maşini pe care le deţine în familie. Un BMW 118 diesel, al soţiei, sau o Honda Accord 2,2 diesel, a lui."
 tags: [anunţ, vânzare, BMW, Honda Accord]
 ---
 
