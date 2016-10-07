@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Cătălin vinde!
-description: "Ai 8000 de euro? Cătălin îşi vinde una din cele două maşini pe care le deţine în familie. Un BMW 118 diesel, al soţiei, sau o Honda Accord 2,2 diesel, a lui. Maşinile sunt foarte bine întreţinute, au caiet de service şi au fost cumpărate din România. BMW-ul este din 2007 şi are 65000 km, iar Honda este din 2008 şi are 116000 km."
-tags: [anunţ, vânzare, BMW, Honda Accord]
+description: "Ai 8000 de euro? Cătălin îşi vinde una din cele două maşini pe care le deține în familie. Un BMW 118 diesel, al soției, sau o Honda Accord 2,2 diesel, a lui. Maşinile sunt foarte bine întreținute, au caiet de service şi au fost cumpărate din România. BMW-ul este din 2007 şi are 65000 km, iar Honda este din 2008 şi are 116000 km."
+tags: [anunț, vânzare, BMW, Honda Accord]
 ---
 
 Ai 8000 de euro?
 
-Cătălin îşi vinde una din cele două maşini pe care le deţine în familie. Un BMW 118 diesel, al soţiei, sau o Honda Accord 2,2 diesel, a lui.
+Cătălin îşi vinde una din cele două maşini pe care le deține în familie. Un BMW 118 diesel, al soției, sau o Honda Accord 2,2 diesel, a lui.
 
-Maşinile sunt foarte bine întreţinute, au caiet de service şi au fost cumpărate din România.
+Maşinile sunt foarte bine întreținute, au caiet de service şi au fost cumpărate din România.
 
 BMW-ul este din 2007 şi are 65000 km, iar Honda este din 2008 şi are 116000 km.
 
-Pentru detalii vă stau la dispoziţie la telefon <a href="tel:+40-740-303-651">0740 303 651</a> sau pe e-mail la <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%67%61%62%72%69%65%6c.%64%75%72%62%61%63%61@%63%61%72%63%6f%6e%63%69%65%72%67%65.%72%6f">gabriel.durbaca@carconcierge.ro</a>.
+Pentru detalii vă stau la dispoziție la telefon <a href="tel:+40-740-303-651">0740 303 651</a> sau pe e-mail la <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%67%61%62%72%69%65%6c.%64%75%72%62%61%63%61@%63%61%72%63%6f%6e%63%69%65%72%67%65.%72%6f">gabriel.durbaca@carconcierge.ro</a>.
 
 <div class="row popup-gallery">
   <div class="col-md-3 col-sm-4 col-xs-6">
