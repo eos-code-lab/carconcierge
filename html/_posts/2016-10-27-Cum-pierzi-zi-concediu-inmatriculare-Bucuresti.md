@@ -20,4 +20,5 @@ După ce ai [toate documentele](http://prefecturabucuresti.ro/?d=serviciu_inmatr
 * <b>TIP 3:</b> ia o carte cu tine sau o baterie externă pentru încărcarea telefonului :)
 
 <b>P.S.:</b> minunea cu bonurile de ordine a tinut trei zile, deci se sta la coada :)
+
 <b>P.S.S.:</b> INCREDIBIL! Azi se iau bonuri de ordine!
