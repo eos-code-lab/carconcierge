@@ -2,6 +2,7 @@
 layout: post
 title: Uite că se poate!
 description: "Zilele trecute l-am ajutat pe Ovidiu să își vândă mașina, un Renault aproape nou, dar nu asta vreau să subliniez, ci faptul că noul proprietar a reușit să își înmatriculeze mașina într-o singură zi, adică de dimineața până seara."
+keywords: [consultanță auto, înmatriculări, cumpărare auto, vânzare auto, servicii conexe auto, mașini noi, mașini second hand, anunț, înmatriculare, vânzare]
 tags: [înmatriculare, vânzare]
 ---
 

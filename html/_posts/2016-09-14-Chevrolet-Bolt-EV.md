@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Chevrolet Bolt EV
+keywords: [consultanță auto, înmatriculări, cumpărare auto, vânzare auto, servicii conexe auto, mașini noi, mașini second hand, mașini electrice, EV]
 tags: [mașini noi, mașini electrice, EV]
 ---
 

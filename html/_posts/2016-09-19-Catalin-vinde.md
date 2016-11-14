@@ -2,6 +2,7 @@
 layout: post
 title: Cătălin vinde!
 description: "Ai 8000 de euro? Cătălin își vinde una din cele două mașini pe care le deține în familie. Un BMW 118 diesel, al soției, sau o Honda Accord 2,2 diesel, a lui. Mașinile sunt foarte bine întreținute, au caiet de service și au fost cumpărate din România. BMW-ul este din 2007 și are 65000 km, iar Honda este din 2008 și are 116000 km."
+keywords: [consultanță auto, înmatriculări, cumpărare auto, vânzare auto, servicii conexe auto, mașini noi, mașini second hand, anunț, vânzare, BMW, Honda Accord]
 tags: [anunț, vânzare, BMW, Honda Accord]
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Cine este vinovat pentru cozile interminabile de la DRPCIV?
+keywords: [consultanță auto, înmatriculări, cumpărare auto, vânzare auto, servicii conexe auto, mașini noi, mașini second hand, DRPCIV, înmatriculare, legislație]
 tags: [DRPCIV, înmatriculare, legislație]
 ---
 

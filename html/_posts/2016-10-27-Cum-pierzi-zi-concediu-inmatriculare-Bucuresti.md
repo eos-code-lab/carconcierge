@@ -2,6 +2,7 @@
 layout: post
 title: Cum să pierzi doar o zi de concediu pentru înmatricularea unui autoturism nou în București
 description: "Dacă iei decizia să înmatriculezi singur mașina, îți dau câteva ponturi prin care să-ți economisești zilele de concediu."
+keywords: [consultanță auto, înmatriculări, cumpărare auto, vânzare auto, servicii conexe auto, mașini noi, mașini second hand, înmatriculare, ANAF, DRPCIV, legislație]
 tags: [înmatriculare, ANAF, DRPCIV, legislație]
 ---
 
