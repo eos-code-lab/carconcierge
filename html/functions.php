@@ -3,6 +3,24 @@
 define("MESSAGE_TYPE_NOTIFICATION", "MESSAGE_TYPE_NOTIFICATION");
 define("MESSAGE_TYPE_THANK_YOU", "MESSAGE_TYPE_THANK_YOU");
 
+function post($url, $data = array()) {
+  $ch = curl_init();
+
+  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+  curl_setopt($ch, CURLOPT_POST, true);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+  curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+  curl_setopt($ch, CURLOPT_URL, $url);
+
+  $response = curl_exec($ch);
+
+  curl_close($ch);
+
+  return $response;
+}
+
 function save_contact($name, $email, $tel, $message){
   // $pdo = new PDO(
   //    $config['database_dsn'],
