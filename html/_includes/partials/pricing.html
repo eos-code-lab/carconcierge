@@ -61,8 +61,10 @@
             <div>
               <p><img src="{{ review.avatar | uri_escape | xml_escape }}" alt="{{ review.reviewer }}" class="img-circle center-block"></p>
               <p>&nbsp;</p>
-              <p class="h3 lead review">„{{ review.text }}”</p>
-              <p>&nbsp;</p>
+              {% if review.text.size > 0 %}
+                <p class="h3 lead review">„{{ review.text }}”</p>
+                <p>&nbsp;</p>
+              {% endif %}
               <p>{{ review.reviewer }}</p>
               <p>
                 {% for i in (0..4) %}
