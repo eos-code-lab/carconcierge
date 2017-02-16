@@ -7,7 +7,7 @@ Car Concierge oferă servicii de preluare şi predare autoturisme, înmatriculă
 
 ## Copyright and License
 
-Copyright © 2015-2016 EOS Code Lab
+Copyright © 2015-2017 EOS Code Lab
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
