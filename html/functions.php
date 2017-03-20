@@ -49,7 +49,7 @@ function send_mail($type, $to, $contact_form = array()) {
 
   if ($type === MESSAGE_TYPE_THANK_YOU) {
     $subject = "[CarConcierge] Multumim pentru mesajul trimis!";
-    $body = "Salut ${contact_form['name']},<br /><br />Iti multumim pentru mesaj.<br />Vei fi contactat in cel mai scurt timp posibil, de obicei nu mai mult de doua ore.<br /><br />Programul de functionare: Luni-Vineri, 09-18<br /><br />Echipa Car Concierge<br /><a href='http://carconcierge.ro/'>www.carconcierge.ro</a>";
+    $body = "Salut ${contact_form['name']},<br /><br />Iti multumim pentru mesaj.<br />Vei fi contactat in cel mai scurt timp posibil, de obicei nu mai mult de doua ore.<br /><br />Programul de functionare: Luni-Vineri, 09:00 - 18:00.<br /><br />Echipa Car Concierge<br /><a href='http://carconcierge.ro/'>www.carconcierge.ro</a>";
     mail($to, $subject, $body, $headers);
   } else {
     if (!empty($contact_form)) {
