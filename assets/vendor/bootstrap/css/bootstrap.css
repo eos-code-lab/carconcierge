@@ -1,12 +1,12 @@
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=775b1320a536a87add21c1fad19a0172)
- * Config saved to config.json and https://gist.github.com/775b1320a536a87add21c1fad19a0172
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=264734d253d80c7cf56e7528070e5571)
+ * Config saved to config.json and https://gist.github.com/264734d253d80c7cf56e7528070e5571
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -2995,27 +2995,27 @@ fieldset[disabled] .btn-info.focus {
   background-color: #ffffff;
 }
 .btn-warning {
-  color: #ffffff;
-  background-color: #f0ad4e;
-  border-color: #eea236;
+  color: #222222;
+  background-color: #ffcc00;
+  border-color: #e6b800;
 }
 .btn-warning:focus,
 .btn-warning.focus {
-  color: #ffffff;
-  background-color: #ec971f;
-  border-color: #985f0d;
+  color: #222222;
+  background-color: #cca300;
+  border-color: #665200;
 }
 .btn-warning:hover {
-  color: #ffffff;
-  background-color: #ec971f;
-  border-color: #d58512;
+  color: #222222;
+  background-color: #cca300;
+  border-color: #a88700;
 }
 .btn-warning:active,
 .btn-warning.active,
 .open > .dropdown-toggle.btn-warning {
-  color: #ffffff;
-  background-color: #ec971f;
-  border-color: #d58512;
+  color: #222222;
+  background-color: #cca300;
+  border-color: #a88700;
 }
 .btn-warning:active:hover,
 .btn-warning.active:hover,
@@ -3026,9 +3026,9 @@ fieldset[disabled] .btn-info.focus {
 .btn-warning:active.focus,
 .btn-warning.active.focus,
 .open > .dropdown-toggle.btn-warning.focus {
-  color: #ffffff;
-  background-color: #d58512;
-  border-color: #985f0d;
+  color: #222222;
+  background-color: #a88700;
+  border-color: #665200;
 }
 .btn-warning:active,
 .btn-warning.active,
@@ -3044,12 +3044,12 @@ fieldset[disabled] .btn-warning:focus,
 .btn-warning.disabled.focus,
 .btn-warning[disabled].focus,
 fieldset[disabled] .btn-warning.focus {
-  background-color: #f0ad4e;
-  border-color: #eea236;
+  background-color: #ffcc00;
+  border-color: #e6b800;
 }
 .btn-warning .badge {
-  color: #f0ad4e;
-  background-color: #ffffff;
+  color: #ffcc00;
+  background-color: #222222;
 }
 .btn-danger {
   color: #ffffff;
@@ -4075,11 +4075,11 @@ a.label:focus {
   background-color: #31b0d5;
 }
 .label-warning {
-  background-color: #f0ad4e;
+  background-color: #ffcc00;
 }
 .label-warning[href]:hover,
 .label-warning[href]:focus {
-  background-color: #ec971f;
+  background-color: #cca300;
 }
 .label-danger {
   background-color: #d9534f;
