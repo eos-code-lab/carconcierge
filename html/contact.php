@@ -2,7 +2,7 @@
 require 'config.php';
 require 'functions.php';
 
-$email_to = 'gabriel.durbaca@carconcierge.ro, ifrim.claudia@gmail.com';
+$email_to = NOTIFICATIONS_EMAIL_LIST;
 
 $required_fields = array(
   'name',
