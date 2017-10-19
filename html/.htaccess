@@ -1,3 +1,4 @@
+RewriteEngine on
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
 </IfModule>
@@ -10,3 +11,8 @@
 </IfModule>
 
 ErrorDocument 404 /404/index.html
+RewriteCond %{HTTP_HOST} ^www\.carconcierge\.ro$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^/?$ "https\:\/\/carconcierge\.ro\/" [R=301,L]
