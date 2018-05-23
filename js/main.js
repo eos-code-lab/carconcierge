@@ -106,7 +106,7 @@
         }
       }
     },
-    submitHandler: function (form) {
+    submitHandler: function () {
       if (typeof ga === 'function') {
         ga('send', 'event', 'Contact', 'submit', 'Trimiteți-ne un mesaj');
       }
@@ -115,7 +115,74 @@
         goog_report_conversion();
       }
 
-      form.submit();
+      // form.submit();
+      $('#contact-form').submit(function (e) {
+        e.preventDefault();
+
+        var contactForm = $(this);
+
+        // show feedback for the user on submit
+        $('button[type="submit"]', contactForm).each(function () {
+          var btn = $(this);
+          btn.prop('type','button');
+          btn.prop('orig_label',btn.text());
+          btn.text('In curs de livrare ...');
+        });
+
+        // verify information and send message on email
+        $.ajax({
+          type: 'post',
+          url: 'contact.php',
+          data: contactForm.serialize(),
+          success: afterFormSubmitted,
+          dataType: 'json'
+        });
+      });
     }
   });
 })(jQuery);
+
+function removeFeedback() {
+  var form = $('form#contact-form');
+
+  //reverse the feedback from the button
+  $('button[type="button"]', form).each(function() {
+    var btn = $(this);
+    var label = btn.prop('orig_label');
+    if (label) {
+      btn.prop('type','submit');
+      btn.text(label);
+      btn.prop('orig_label','');
+    }
+  });
+}
+
+function clenup() {
+  $('#success_message').hide();
+  $('#error_message').hide();
+  removeFeedback();
+  $('form#contact-form').trigger('reset');
+  $('form#contact-form').show();
+}
+
+function afterFormSubmitted(data) {
+  // cleanup old messages
+  $('#success_message ul').remove();
+  $('#error_message ul').remove();
+
+  if (data.result == 'success') {
+    $('form#contact-form').hide();
+    $('#success_message').show();
+    $('#error_message').hide();
+    setTimeout(function () {
+      clenup();
+    },3000);
+  } else {
+    $('#error_message').append('<ul></ul>');
+    $('#error_message ul').append('<li>Completati campurile obligatorii si completati reCAPTCHA.</li>');
+    $('#success_message').hide();
+    $('#error_message').show();
+
+    removeFeedback();
+  }
+}

@@ -13,24 +13,33 @@ $required_fields = array(
 
 foreach ($required_fields as $key) {
   if (empty($_POST[$key])) {
-    header('Location: /');
+    return json_encode([
+      'result'=>'required_fields',
+      'errors'=>['all'=>'Completati campurile obligatorii.']
+    ]);
   }
 }
 
-$response = post(RECAPTCHA_URL, array(
+$response = post(array(
   'secret'   => RECAPTCHA_SECRET,
   'response' => $_POST['g-recaptcha-response'],
   'remoteip' => $_SERVER['REMOTE_ADDR']
 ));
 
 if (false === $response) {
-  header('Location: /');
+  return json_encode([
+    'result'=>'recaptcha_validation_failed',
+    'errors'=>['captcha'=>'Validarea ReCaptcha a esuat.']
+  ]);
 }
 
 $response = json_decode($response);
 
 if (true !== $response->success) {
-  header('Location: /');
+  return json_encode([
+    'result'=>'recaptcha_validation_failed',
+    'errors'=>['captcha'=>'Validarea ReCaptcha a esuat.']
+  ]);
 }
 
 $name = $_POST['name'];
@@ -44,13 +53,13 @@ if (isset($_POST['tel'])) {
 }
 
 if (preg_match($pattern, $name) || preg_match($pattern, $email) || preg_match($pattern, $subject)) {
-  //TODO: Add log message "Header injection detected" - data not saved, user redirected on main page
-  header('Location: /');
+  return json_encode([
+    'result'=>'header_injection_detected',
+    'errors'=>['message'=>'Mesajul trebuie sa fie scurt si fara caractere speciale in exces :).']
+  ]);
 }
 
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  // save message in db
-  // save_contact($name, $email, $tel, $message);
   // send notification on email for admins and send thank you message to client
   send_mail(MESSAGE_TYPE_NOTIFICATION, $email_to, array(
     'name' => $name,
@@ -60,9 +69,12 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
     )
   );
   send_mail(MESSAGE_TYPE_THANK_YOU, $email, array('name' => $name, 'email' => $email));
-  //TODO: Add log message "Notification e-mail sent!"
-  header('Location: /');
+  return json_encode([
+    'result'=>'success'
+  ]);
 } else {
-  //TODO: Add log message "Invalid e-mail detected" - data not saved, user redirected on main page
-  header('Location: /');
+  return json_encode([
+    'result'=>'failed',
+    'errors'=>['all'=>'Mesajul nu a fost trimis cu success. Adresa de mail introdusa in formular nu este valida.']
+  ]);
 }
