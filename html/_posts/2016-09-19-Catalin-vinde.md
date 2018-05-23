@@ -14,7 +14,7 @@ Mașinile sunt foarte bine întreținute, au caiet de service și au fost cumpă
 
 BMW-ul este din 2007 și are 65000 km, iar Honda este din 2008 și are 116000 km.
 
-Pentru detalii vă stau la dispoziție la telefon <a href="tel:+40-745-202-285">0745 202 285</a> sau pe e-mail la <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%67%61%62%72%69%65%6c.%64%75%72%62%61%63%61@%63%61%72%63%6f%6e%63%69%65%72%67%65.%72%6f">gabriel.durbaca@carconcierge.ro</a>.
+Pentru detalii vă stau la dispoziție la telefon <a href="tel:+40-740-303-651">+40-740-303-651</a> sau pe e-mail la <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%67%61%62%72%69%65%6c.%64%75%72%62%61%63%61@%63%61%72%63%6f%6e%63%69%65%72%67%65.%72%6f">gabriel.durbaca@carconcierge.ro</a>.
 
 <div class="row popup-gallery">
   <div class="col-md-3 col-sm-4 col-xs-6">
