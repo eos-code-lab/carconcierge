@@ -4,6 +4,7 @@ define("MESSAGE_TYPE_NOTIFICATION", "MESSAGE_TYPE_NOTIFICATION");
 define("MESSAGE_TYPE_THANK_YOU", "MESSAGE_TYPE_THANK_YOU");
 
 function post($url, $data = array()) {
+  $url = 'https://www.google.com/recaptcha/api/siteverify';
   $ch = curl_init();
 
   curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
@@ -19,22 +20,6 @@ function post($url, $data = array()) {
   curl_close($ch);
 
   return $response;
-}
-
-function save_contact($name, $email, $tel, $message){
-  // $pdo = new PDO(
-  //    $config['database_dsn'],
-  //    $config['database_user'],
-  //    $config['database_pass'],
-  //  );
-
-  // $query = "INSERT INTO contact(id,name,email,phone,message) VALUES ('NULL','$name','$email','$tel','$message')";
-  // $stmt = $pdo->prepare($query);
-  // $stmt->bindParam(':name', $name, PDO::PARAM_STR);
-  // $stmt->bindParam(':email', $email, PDO::PARAM_STR);
-  // $stmt->bindParam(':tel', $tel, PDO::PARAM_STR);
-  // $stmt->bindParam(':message', $message, PDO::PARAM_STR);
-  // $stmt->execute();
 }
 
 function send_mail($type, $to, $contact_form = array()) {

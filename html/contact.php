@@ -49,17 +49,17 @@ if (preg_match($pattern, $name) || preg_match($pattern, $email) || preg_match($p
 }
 
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  // save message in db
-  // save_contact($name, $email, $tel, $message);
-  // send notification on email for admins and send thank you message to client
-  send_mail(MESSAGE_TYPE_NOTIFICATION, $email_to, array(
-    'name' => $name,
-    'email' => $email,
-    'tel' => $tel,
-    'message' => $message,
-    )
-  );
-  send_mail(MESSAGE_TYPE_THANK_YOU, $email, array('name' => $name, 'email' => $email));
+  if (trim($name) !== '' && trim($email) !== '' && trim($message) !== '') {
+    // send notification on email for admins and send thank you message to client
+    send_mail(MESSAGE_TYPE_NOTIFICATION, $email_to, array(
+      'name' => $name,
+      'email' => $email,
+      'tel' => $tel,
+      'message' => $message,
+      )
+    );
+    send_mail(MESSAGE_TYPE_THANK_YOU, $email, array('name' => $name, 'email' => $email));
+  }
   //TODO: Add log message "Notification e-mail sent!"
   header('Location: /');
 } else {
