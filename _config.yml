@@ -24,7 +24,7 @@ author:       EOS Code Lab
 timezone: Europe/Bucharest
 
 # Plugins
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 # Pagination
 paginate:       5
