@@ -55,7 +55,9 @@
     focusOnSelect: true,
     nextArrow: '<button type="button" class="slick-next"><span class="glyphicon glyphicon-chevron-right"></span></button>',
     prevArrow: '<button type="button" class="slick-prev"><span class="glyphicon glyphicon-chevron-left"></span></button>',
-    slidesToShow: 3
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true
   });
 
   $('#services').slick({
