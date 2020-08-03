@@ -1,5 +1,6 @@
 User-agent: *
 Crawl-delay: 10
+Disallow: /inmatriculare-auto/
 Disallow: /contact.php
 Disallow: /config.php
 Disallow: /functions.php
