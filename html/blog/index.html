@@ -9,7 +9,7 @@ slug: blog
 <div class="section section-default">
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-12">
         <div class="posts">
           {% for post in paginator.posts %}
             <h2 class="h3"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
@@ -67,11 +67,11 @@ slug: blog
           </nav>
         {% endif %}
       </div>
-      <div class="col-md-4">
+      <!-- <div class="col-md-4">
         <div class="well well-lg call-to-action">
           {% include partials/contact-form.html %}
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
